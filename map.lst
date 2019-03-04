@@ -1,0 +1,2230 @@
+                              1 ;--------------------------------------------------------
+                              2 ; File Created by SDCC : FreeWare ANSI-C Compiler
+                              3 ; Version 2.2.1 Sun Mar 03 12:33:11 2019
+                              4 
+                              5 ;--------------------------------------------------------
+                              6 	.module lcc59560
+                              7 	
+                              8 ;--------------------------------------------------------
+                              9 ; Public variables in this module
+                             10 ;--------------------------------------------------------
+                             11 	.globl _map
+                             12 ;--------------------------------------------------------
+                             13 ; Externals used
+                             14 ;--------------------------------------------------------
+                             15 ;--------------------------------------------------------
+                             16 ; special function registers
+                             17 ;--------------------------------------------------------
+                             18 ;--------------------------------------------------------
+                             19 ; special function bits 
+                             20 ;--------------------------------------------------------
+                             21 ;--------------------------------------------------------
+                             22 ; internal ram data
+                             23 ;--------------------------------------------------------
+                             24 	.area _DATA
+   0000                      25 _map::
+   0000                      26 	.ds 360
+                             27 ;--------------------------------------------------------
+                             28 ; overlayable items in internal ram 
+                             29 ;--------------------------------------------------------
+                             30 	.area _OVERLAY
+                             31 ;--------------------------------------------------------
+                             32 ; indirectly addressable internal ram data
+                             33 ;--------------------------------------------------------
+                             34 	.area _ISEG
+                             35 ;--------------------------------------------------------
+                             36 ; bit data
+                             37 ;--------------------------------------------------------
+                             38 	.area _BSEG
+                             39 ;--------------------------------------------------------
+                             40 ; external ram data
+                             41 ;--------------------------------------------------------
+                             42 	.area _XSEG
+                             43 ;--------------------------------------------------------
+                             44 ; global & static initialisations
+                             45 ;--------------------------------------------------------
+                             46 	.area _GSINIT
+                             47 	.area _GSFINAL
+                             48 	.area _GSINIT
+                             49 ;	map.c 66
+                             50 ; genAssign (pointer)
+   0000 11 00 00             51 	ld	de,#_map + 0
+   0003 3E 00                52 	ld	a,#0x00
+   0005 12                   53 	ld	(de),a
+                             54 ; genPlus
+                             55 ; genPlusIncr
+   0006 11 01 00             56 	ld	de,#_map + 1
+                             57 ; genAssign (pointer)
+   0009 3E 02                58 	ld	a,#0x02
+   000B 12                   59 	ld	(de),a
+                             60 ; genPlus
+                             61 ; genPlusIncr
+   000C 11 02 00             62 	ld	de,#_map + 2
+                             63 ; genAssign (pointer)
+   000F 3E 10                64 	ld	a,#0x10
+   0011 12                   65 	ld	(de),a
+                             66 ; genPlus
+                             67 ; genPlusIncr
+   0012 11 03 00             68 	ld	de,#_map + 3
+                             69 ; genAssign (pointer)
+   0015 3E 12                70 	ld	a,#0x12
+   0017 12                   71 	ld	(de),a
+                             72 ; genPlus
+                             73 ; genPlusIncr
+   0018 11 04 00             74 	ld	de,#_map + 4
+                             75 ; genAssign (pointer)
+   001B 3E 10                76 	ld	a,#0x10
+   001D 12                   77 	ld	(de),a
+                             78 ; genPlus
+                             79 ; genPlusIncr
+   001E 11 05 00             80 	ld	de,#_map + 5
+                             81 ; genAssign (pointer)
+   0021 3E 12                82 	ld	a,#0x12
+   0023 12                   83 	ld	(de),a
+                             84 ; genPlus
+                             85 ; genPlusIncr
+   0024 11 06 00             86 	ld	de,#_map + 6
+                             87 ; genAssign (pointer)
+   0027 3E 10                88 	ld	a,#0x10
+   0029 12                   89 	ld	(de),a
+                             90 ; genPlus
+                             91 ; genPlusIncr
+   002A 11 07 00             92 	ld	de,#_map + 7
+                             93 ; genAssign (pointer)
+   002D 3E 12                94 	ld	a,#0x12
+   002F 12                   95 	ld	(de),a
+                             96 ; genPlus
+                             97 ; genPlusIncr
+   0030 11 08 00             98 	ld	de,#_map + 8
+                             99 ; genAssign (pointer)
+   0033 3E 04               100 	ld	a,#0x04
+   0035 12                  101 	ld	(de),a
+                            102 ; genPlus
+                            103 ; genPlusIncr
+   0036 11 09 00            104 	ld	de,#_map + 9
+                            105 ; genAssign (pointer)
+   0039 3E 12               106 	ld	a,#0x12
+   003B 12                  107 	ld	(de),a
+                            108 ; genPlus
+                            109 ; genPlusIncr
+   003C 11 0A 00            110 	ld	de,#_map + 10
+                            111 ; genAssign (pointer)
+   003F 3E 10               112 	ld	a,#0x10
+   0041 12                  113 	ld	(de),a
+                            114 ; genPlus
+                            115 ; genPlusIncr
+   0042 11 0B 00            116 	ld	de,#_map + 11
+                            117 ; genAssign (pointer)
+   0045 3E 12               118 	ld	a,#0x12
+   0047 12                  119 	ld	(de),a
+                            120 ; genPlus
+                            121 ; genPlusIncr
+   0048 11 0C 00            122 	ld	de,#_map + 12
+                            123 ; genAssign (pointer)
+   004B 3E 04               124 	ld	a,#0x04
+   004D 12                  125 	ld	(de),a
+                            126 ; genPlus
+                            127 ; genPlusIncr
+   004E 11 0D 00            128 	ld	de,#_map + 13
+                            129 ; genAssign (pointer)
+   0051 3E 12               130 	ld	a,#0x12
+   0053 12                  131 	ld	(de),a
+                            132 ; genPlus
+                            133 ; genPlusIncr
+   0054 11 0E 00            134 	ld	de,#_map + 14
+                            135 ; genAssign (pointer)
+   0057 3E 04               136 	ld	a,#0x04
+   0059 12                  137 	ld	(de),a
+                            138 ; genPlus
+                            139 ; genPlusIncr
+   005A 11 0F 00            140 	ld	de,#_map + 15
+                            141 ; genAssign (pointer)
+   005D 3E 12               142 	ld	a,#0x12
+   005F 12                  143 	ld	(de),a
+                            144 ; genPlus
+                            145 ; genPlusIncr
+   0060 11 10 00            146 	ld	de,#_map + 16
+                            147 ; genAssign (pointer)
+   0063 3E 04               148 	ld	a,#0x04
+   0065 12                  149 	ld	(de),a
+                            150 ; genPlus
+                            151 ; genPlusIncr
+   0066 11 11 00            152 	ld	de,#_map + 17
+                            153 ; genAssign (pointer)
+   0069 3E 12               154 	ld	a,#0x12
+   006B 12                  155 	ld	(de),a
+                            156 ; genPlus
+                            157 ; genPlusIncr
+   006C 11 12 00            158 	ld	de,#_map + 18
+                            159 ; genAssign (pointer)
+   006F 3E 04               160 	ld	a,#0x04
+   0071 12                  161 	ld	(de),a
+                            162 ; genPlus
+                            163 ; genPlusIncr
+   0072 11 13 00            164 	ld	de,#_map + 19
+                            165 ; genAssign (pointer)
+   0075 3E 06               166 	ld	a,#0x06
+   0077 12                  167 	ld	(de),a
+                            168 ; genPlus
+                            169 ; genPlusIncr
+   0078 11 14 00            170 	ld	de,#_map + 20
+                            171 ; genAssign (pointer)
+   007B 3E 01               172 	ld	a,#0x01
+   007D 12                  173 	ld	(de),a
+                            174 ; genPlus
+                            175 ; genPlusIncr
+   007E 11 15 00            176 	ld	de,#_map + 21
+                            177 ; genAssign (pointer)
+   0081 3E 03               178 	ld	a,#0x03
+   0083 12                  179 	ld	(de),a
+                            180 ; genPlus
+                            181 ; genPlusIncr
+   0084 11 16 00            182 	ld	de,#_map + 22
+                            183 ; genAssign (pointer)
+   0087 3E 11               184 	ld	a,#0x11
+   0089 12                  185 	ld	(de),a
+                            186 ; genPlus
+                            187 ; genPlusIncr
+   008A 11 17 00            188 	ld	de,#_map + 23
+                            189 ; genAssign (pointer)
+   008D 3E 13               190 	ld	a,#0x13
+   008F 12                  191 	ld	(de),a
+                            192 ; genPlus
+                            193 ; genPlusIncr
+   0090 11 18 00            194 	ld	de,#_map + 24
+                            195 ; genAssign (pointer)
+   0093 3E 11               196 	ld	a,#0x11
+   0095 12                  197 	ld	(de),a
+                            198 ; genPlus
+                            199 ; genPlusIncr
+   0096 11 19 00            200 	ld	de,#_map + 25
+                            201 ; genAssign (pointer)
+   0099 3E 13               202 	ld	a,#0x13
+   009B 12                  203 	ld	(de),a
+                            204 ; genPlus
+                            205 ; genPlusIncr
+   009C 11 1A 00            206 	ld	de,#_map + 26
+                            207 ; genAssign (pointer)
+   009F 3E 11               208 	ld	a,#0x11
+   00A1 12                  209 	ld	(de),a
+                            210 ; genPlus
+                            211 ; genPlusIncr
+   00A2 11 1B 00            212 	ld	de,#_map + 27
+                            213 ; genAssign (pointer)
+   00A5 3E 13               214 	ld	a,#0x13
+   00A7 12                  215 	ld	(de),a
+                            216 ; genPlus
+                            217 ; genPlusIncr
+   00A8 11 1C 00            218 	ld	de,#_map + 28
+                            219 ; genAssign (pointer)
+   00AB 3E 11               220 	ld	a,#0x11
+   00AD 12                  221 	ld	(de),a
+                            222 ; genPlus
+                            223 ; genPlusIncr
+   00AE 11 1D 00            224 	ld	de,#_map + 29
+                            225 ; genAssign (pointer)
+   00B1 3E 13               226 	ld	a,#0x13
+   00B3 12                  227 	ld	(de),a
+                            228 ; genPlus
+                            229 ; genPlusIncr
+   00B4 11 1E 00            230 	ld	de,#_map + 30
+                            231 ; genAssign (pointer)
+   00B7 3E 11               232 	ld	a,#0x11
+   00B9 12                  233 	ld	(de),a
+                            234 ; genPlus
+                            235 ; genPlusIncr
+   00BA 11 1F 00            236 	ld	de,#_map + 31
+                            237 ; genAssign (pointer)
+   00BD 3E 13               238 	ld	a,#0x13
+   00BF 12                  239 	ld	(de),a
+                            240 ; genPlus
+                            241 ; genPlusIncr
+   00C0 11 20 00            242 	ld	de,#_map + 32
+                            243 ; genAssign (pointer)
+   00C3 3E 11               244 	ld	a,#0x11
+   00C5 12                  245 	ld	(de),a
+                            246 ; genPlus
+                            247 ; genPlusIncr
+   00C6 11 21 00            248 	ld	de,#_map + 33
+                            249 ; genAssign (pointer)
+   00C9 3E 13               250 	ld	a,#0x13
+   00CB 12                  251 	ld	(de),a
+                            252 ; genPlus
+                            253 ; genPlusIncr
+   00CC 11 22 00            254 	ld	de,#_map + 34
+                            255 ; genAssign (pointer)
+   00CF 3E 11               256 	ld	a,#0x11
+   00D1 12                  257 	ld	(de),a
+                            258 ; genPlus
+                            259 ; genPlusIncr
+   00D2 11 23 00            260 	ld	de,#_map + 35
+                            261 ; genAssign (pointer)
+   00D5 3E 13               262 	ld	a,#0x13
+   00D7 12                  263 	ld	(de),a
+                            264 ; genPlus
+                            265 ; genPlusIncr
+   00D8 11 24 00            266 	ld	de,#_map + 36
+                            267 ; genAssign (pointer)
+   00DB 3E 11               268 	ld	a,#0x11
+   00DD 12                  269 	ld	(de),a
+                            270 ; genPlus
+                            271 ; genPlusIncr
+   00DE 11 25 00            272 	ld	de,#_map + 37
+                            273 ; genAssign (pointer)
+   00E1 3E 13               274 	ld	a,#0x13
+   00E3 12                  275 	ld	(de),a
+                            276 ; genPlus
+                            277 ; genPlusIncr
+   00E4 11 26 00            278 	ld	de,#_map + 38
+                            279 ; genAssign (pointer)
+   00E7 3E 05               280 	ld	a,#0x05
+   00E9 12                  281 	ld	(de),a
+                            282 ; genPlus
+                            283 ; genPlusIncr
+   00EA 11 27 00            284 	ld	de,#_map + 39
+                            285 ; genAssign (pointer)
+   00ED 3E 07               286 	ld	a,#0x07
+   00EF 12                  287 	ld	(de),a
+                            288 ; genPlus
+                            289 ; genPlusIncr
+   00F0 11 28 00            290 	ld	de,#_map + 40
+                            291 ; genAssign (pointer)
+   00F3 3E 18               292 	ld	a,#0x18
+   00F5 12                  293 	ld	(de),a
+                            294 ; genPlus
+                            295 ; genPlusIncr
+   00F6 11 29 00            296 	ld	de,#_map + 41
+                            297 ; genAssign (pointer)
+   00F9 3E 1A               298 	ld	a,#0x1A
+   00FB 12                  299 	ld	(de),a
+                            300 ; genPlus
+                            301 ; genPlusIncr
+   00FC 11 2A 00            302 	ld	de,#_map + 42
+                            303 ; genAssign (pointer)
+   00FF 3E 20               304 	ld	a,#0x20
+   0101 12                  305 	ld	(de),a
+                            306 ; genPlus
+                            307 ; genPlusIncr
+   0102 11 2B 00            308 	ld	de,#_map + 43
+                            309 ; genAssign (pointer)
+   0105 3E 22               310 	ld	a,#0x22
+   0107 12                  311 	ld	(de),a
+                            312 ; genPlus
+                            313 ; genPlusIncr
+   0108 11 2C 00            314 	ld	de,#_map + 44
+                            315 ; genAssign (pointer)
+   010B 3E 20               316 	ld	a,#0x20
+   010D 12                  317 	ld	(de),a
+                            318 ; genPlus
+                            319 ; genPlusIncr
+   010E 11 2D 00            320 	ld	de,#_map + 45
+                            321 ; genAssign (pointer)
+   0111 3E 22               322 	ld	a,#0x22
+   0113 12                  323 	ld	(de),a
+                            324 ; genPlus
+                            325 ; genPlusIncr
+   0114 11 2E 00            326 	ld	de,#_map + 46
+                            327 ; genAssign (pointer)
+   0117 3E 20               328 	ld	a,#0x20
+   0119 12                  329 	ld	(de),a
+                            330 ; genPlus
+                            331 ; genPlusIncr
+   011A 11 2F 00            332 	ld	de,#_map + 47
+                            333 ; genAssign (pointer)
+   011D 3E 22               334 	ld	a,#0x22
+   011F 12                  335 	ld	(de),a
+                            336 ; genPlus
+                            337 ; genPlusIncr
+   0120 11 30 00            338 	ld	de,#_map + 48
+                            339 ; genAssign (pointer)
+   0123 3E 20               340 	ld	a,#0x20
+   0125 12                  341 	ld	(de),a
+                            342 ; genPlus
+                            343 ; genPlusIncr
+   0126 11 31 00            344 	ld	de,#_map + 49
+                            345 ; genAssign (pointer)
+   0129 3E 22               346 	ld	a,#0x22
+   012B 12                  347 	ld	(de),a
+                            348 ; genPlus
+                            349 ; genPlusIncr
+   012C 11 32 00            350 	ld	de,#_map + 50
+                            351 ; genAssign (pointer)
+   012F 3E 20               352 	ld	a,#0x20
+   0131 12                  353 	ld	(de),a
+                            354 ; genPlus
+                            355 ; genPlusIncr
+   0132 11 33 00            356 	ld	de,#_map + 51
+                            357 ; genAssign (pointer)
+   0135 3E 22               358 	ld	a,#0x22
+   0137 12                  359 	ld	(de),a
+                            360 ; genPlus
+                            361 ; genPlusIncr
+   0138 11 34 00            362 	ld	de,#_map + 52
+                            363 ; genAssign (pointer)
+   013B 3E 20               364 	ld	a,#0x20
+   013D 12                  365 	ld	(de),a
+                            366 ; genPlus
+                            367 ; genPlusIncr
+   013E 11 35 00            368 	ld	de,#_map + 53
+                            369 ; genAssign (pointer)
+   0141 3E 22               370 	ld	a,#0x22
+   0143 12                  371 	ld	(de),a
+                            372 ; genPlus
+                            373 ; genPlusIncr
+   0144 11 36 00            374 	ld	de,#_map + 54
+                            375 ; genAssign (pointer)
+   0147 3E 20               376 	ld	a,#0x20
+   0149 12                  377 	ld	(de),a
+                            378 ; genPlus
+                            379 ; genPlusIncr
+   014A 11 37 00            380 	ld	de,#_map + 55
+                            381 ; genAssign (pointer)
+   014D 3E 22               382 	ld	a,#0x22
+   014F 12                  383 	ld	(de),a
+                            384 ; genPlus
+                            385 ; genPlusIncr
+   0150 11 38 00            386 	ld	de,#_map + 56
+                            387 ; genAssign (pointer)
+   0153 3E 20               388 	ld	a,#0x20
+   0155 12                  389 	ld	(de),a
+                            390 ; genPlus
+                            391 ; genPlusIncr
+   0156 11 39 00            392 	ld	de,#_map + 57
+                            393 ; genAssign (pointer)
+   0159 3E 22               394 	ld	a,#0x22
+   015B 12                  395 	ld	(de),a
+                            396 ; genPlus
+                            397 ; genPlusIncr
+   015C 11 3A 00            398 	ld	de,#_map + 58
+                            399 ; genAssign (pointer)
+   015F 3E 1C               400 	ld	a,#0x1C
+   0161 12                  401 	ld	(de),a
+                            402 ; genPlus
+                            403 ; genPlusIncr
+   0162 11 3B 00            404 	ld	de,#_map + 59
+                            405 ; genAssign (pointer)
+   0165 3E 1E               406 	ld	a,#0x1E
+   0167 12                  407 	ld	(de),a
+                            408 ; genPlus
+                            409 ; genPlusIncr
+   0168 11 3C 00            410 	ld	de,#_map + 60
+                            411 ; genAssign (pointer)
+   016B 3E 19               412 	ld	a,#0x19
+   016D 12                  413 	ld	(de),a
+                            414 ; genPlus
+                            415 ; genPlusIncr
+   016E 11 3D 00            416 	ld	de,#_map + 61
+                            417 ; genAssign (pointer)
+   0171 3E 1B               418 	ld	a,#0x1B
+   0173 12                  419 	ld	(de),a
+                            420 ; genPlus
+                            421 ; genPlusIncr
+   0174 11 3E 00            422 	ld	de,#_map + 62
+                            423 ; genAssign (pointer)
+   0177 3E 21               424 	ld	a,#0x21
+   0179 12                  425 	ld	(de),a
+                            426 ; genPlus
+                            427 ; genPlusIncr
+   017A 11 3F 00            428 	ld	de,#_map + 63
+                            429 ; genAssign (pointer)
+   017D 3E 23               430 	ld	a,#0x23
+   017F 12                  431 	ld	(de),a
+                            432 ; genPlus
+                            433 ; genPlusIncr
+   0180 11 40 00            434 	ld	de,#_map + 64
+                            435 ; genAssign (pointer)
+   0183 3E 21               436 	ld	a,#0x21
+   0185 12                  437 	ld	(de),a
+                            438 ; genPlus
+                            439 ; genPlusIncr
+   0186 11 41 00            440 	ld	de,#_map + 65
+                            441 ; genAssign (pointer)
+   0189 3E 23               442 	ld	a,#0x23
+   018B 12                  443 	ld	(de),a
+                            444 ; genPlus
+                            445 ; genPlusIncr
+   018C 11 42 00            446 	ld	de,#_map + 66
+                            447 ; genAssign (pointer)
+   018F 3E 21               448 	ld	a,#0x21
+   0191 12                  449 	ld	(de),a
+                            450 ; genPlus
+                            451 ; genPlusIncr
+   0192 11 43 00            452 	ld	de,#_map + 67
+                            453 ; genAssign (pointer)
+   0195 3E 23               454 	ld	a,#0x23
+   0197 12                  455 	ld	(de),a
+                            456 ; genPlus
+                            457 ; genPlusIncr
+   0198 11 44 00            458 	ld	de,#_map + 68
+                            459 ; genAssign (pointer)
+   019B 3E 21               460 	ld	a,#0x21
+   019D 12                  461 	ld	(de),a
+                            462 ; genPlus
+                            463 ; genPlusIncr
+   019E 11 45 00            464 	ld	de,#_map + 69
+                            465 ; genAssign (pointer)
+   01A1 3E 23               466 	ld	a,#0x23
+   01A3 12                  467 	ld	(de),a
+                            468 ; genPlus
+                            469 ; genPlusIncr
+   01A4 11 46 00            470 	ld	de,#_map + 70
+                            471 ; genAssign (pointer)
+   01A7 3E 21               472 	ld	a,#0x21
+   01A9 12                  473 	ld	(de),a
+                            474 ; genPlus
+                            475 ; genPlusIncr
+   01AA 11 47 00            476 	ld	de,#_map + 71
+                            477 ; genAssign (pointer)
+   01AD 3E 23               478 	ld	a,#0x23
+   01AF 12                  479 	ld	(de),a
+                            480 ; genPlus
+                            481 ; genPlusIncr
+   01B0 11 48 00            482 	ld	de,#_map + 72
+                            483 ; genAssign (pointer)
+   01B3 3E 21               484 	ld	a,#0x21
+   01B5 12                  485 	ld	(de),a
+                            486 ; genPlus
+                            487 ; genPlusIncr
+   01B6 11 49 00            488 	ld	de,#_map + 73
+                            489 ; genAssign (pointer)
+   01B9 3E 23               490 	ld	a,#0x23
+   01BB 12                  491 	ld	(de),a
+                            492 ; genPlus
+                            493 ; genPlusIncr
+   01BC 11 4A 00            494 	ld	de,#_map + 74
+                            495 ; genAssign (pointer)
+   01BF 3E 21               496 	ld	a,#0x21
+   01C1 12                  497 	ld	(de),a
+                            498 ; genPlus
+                            499 ; genPlusIncr
+   01C2 11 4B 00            500 	ld	de,#_map + 75
+                            501 ; genAssign (pointer)
+   01C5 3E 23               502 	ld	a,#0x23
+   01C7 12                  503 	ld	(de),a
+                            504 ; genPlus
+                            505 ; genPlusIncr
+   01C8 11 4C 00            506 	ld	de,#_map + 76
+                            507 ; genAssign (pointer)
+   01CB 3E 21               508 	ld	a,#0x21
+   01CD 12                  509 	ld	(de),a
+                            510 ; genPlus
+                            511 ; genPlusIncr
+   01CE 11 4D 00            512 	ld	de,#_map + 77
+                            513 ; genAssign (pointer)
+   01D1 3E 23               514 	ld	a,#0x23
+   01D3 12                  515 	ld	(de),a
+                            516 ; genPlus
+                            517 ; genPlusIncr
+   01D4 11 4E 00            518 	ld	de,#_map + 78
+                            519 ; genAssign (pointer)
+   01D7 3E 1D               520 	ld	a,#0x1D
+   01D9 12                  521 	ld	(de),a
+                            522 ; genPlus
+                            523 ; genPlusIncr
+   01DA 11 4F 00            524 	ld	de,#_map + 79
+                            525 ; genAssign (pointer)
+   01DD 3E 1F               526 	ld	a,#0x1F
+   01DF 12                  527 	ld	(de),a
+                            528 ; genPlus
+                            529 ; genPlusIncr
+   01E0 11 50 00            530 	ld	de,#_map + 80
+                            531 ; genAssign (pointer)
+   01E3 3E 18               532 	ld	a,#0x18
+   01E5 12                  533 	ld	(de),a
+                            534 ; genPlus
+                            535 ; genPlusIncr
+   01E6 11 51 00            536 	ld	de,#_map + 81
+                            537 ; genAssign (pointer)
+   01E9 3E 1A               538 	ld	a,#0x1A
+   01EB 12                  539 	ld	(de),a
+                            540 ; genPlus
+                            541 ; genPlusIncr
+   01EC 11 52 00            542 	ld	de,#_map + 82
+                            543 ; genAssign (pointer)
+   01EF 3E 20               544 	ld	a,#0x20
+   01F1 12                  545 	ld	(de),a
+                            546 ; genPlus
+                            547 ; genPlusIncr
+   01F2 11 53 00            548 	ld	de,#_map + 83
+                            549 ; genAssign (pointer)
+   01F5 3E 22               550 	ld	a,#0x22
+   01F7 12                  551 	ld	(de),a
+                            552 ; genPlus
+                            553 ; genPlusIncr
+   01F8 11 54 00            554 	ld	de,#_map + 84
+                            555 ; genAssign (pointer)
+   01FB 3E 20               556 	ld	a,#0x20
+   01FD 12                  557 	ld	(de),a
+                            558 ; genPlus
+                            559 ; genPlusIncr
+   01FE 11 55 00            560 	ld	de,#_map + 85
+                            561 ; genAssign (pointer)
+   0201 3E 22               562 	ld	a,#0x22
+   0203 12                  563 	ld	(de),a
+                            564 ; genPlus
+                            565 ; genPlusIncr
+   0204 11 56 00            566 	ld	de,#_map + 86
+                            567 ; genAssign (pointer)
+   0207 3E 20               568 	ld	a,#0x20
+   0209 12                  569 	ld	(de),a
+                            570 ; genPlus
+                            571 ; genPlusIncr
+   020A 11 57 00            572 	ld	de,#_map + 87
+                            573 ; genAssign (pointer)
+   020D 3E 22               574 	ld	a,#0x22
+   020F 12                  575 	ld	(de),a
+                            576 ; genPlus
+                            577 ; genPlusIncr
+   0210 11 58 00            578 	ld	de,#_map + 88
+                            579 ; genAssign (pointer)
+   0213 3E 20               580 	ld	a,#0x20
+   0215 12                  581 	ld	(de),a
+                            582 ; genPlus
+                            583 ; genPlusIncr
+   0216 11 59 00            584 	ld	de,#_map + 89
+                            585 ; genAssign (pointer)
+   0219 3E 22               586 	ld	a,#0x22
+   021B 12                  587 	ld	(de),a
+                            588 ; genPlus
+                            589 ; genPlusIncr
+   021C 11 5A 00            590 	ld	de,#_map + 90
+                            591 ; genAssign (pointer)
+   021F 3E 20               592 	ld	a,#0x20
+   0221 12                  593 	ld	(de),a
+                            594 ; genPlus
+                            595 ; genPlusIncr
+   0222 11 5B 00            596 	ld	de,#_map + 91
+                            597 ; genAssign (pointer)
+   0225 3E 22               598 	ld	a,#0x22
+   0227 12                  599 	ld	(de),a
+                            600 ; genPlus
+                            601 ; genPlusIncr
+   0228 11 5C 00            602 	ld	de,#_map + 92
+                            603 ; genAssign (pointer)
+   022B 3E 20               604 	ld	a,#0x20
+   022D 12                  605 	ld	(de),a
+                            606 ; genPlus
+                            607 ; genPlusIncr
+   022E 11 5D 00            608 	ld	de,#_map + 93
+                            609 ; genAssign (pointer)
+   0231 3E 22               610 	ld	a,#0x22
+   0233 12                  611 	ld	(de),a
+                            612 ; genPlus
+                            613 ; genPlusIncr
+   0234 11 5E 00            614 	ld	de,#_map + 94
+                            615 ; genAssign (pointer)
+   0237 3E 20               616 	ld	a,#0x20
+   0239 12                  617 	ld	(de),a
+                            618 ; genPlus
+                            619 ; genPlusIncr
+   023A 11 5F 00            620 	ld	de,#_map + 95
+                            621 ; genAssign (pointer)
+   023D 3E 22               622 	ld	a,#0x22
+   023F 12                  623 	ld	(de),a
+                            624 ; genPlus
+                            625 ; genPlusIncr
+   0240 11 60 00            626 	ld	de,#_map + 96
+                            627 ; genAssign (pointer)
+   0243 3E 20               628 	ld	a,#0x20
+   0245 12                  629 	ld	(de),a
+                            630 ; genPlus
+                            631 ; genPlusIncr
+   0246 11 61 00            632 	ld	de,#_map + 97
+                            633 ; genAssign (pointer)
+   0249 3E 22               634 	ld	a,#0x22
+   024B 12                  635 	ld	(de),a
+                            636 ; genPlus
+                            637 ; genPlusIncr
+   024C 11 62 00            638 	ld	de,#_map + 98
+                            639 ; genAssign (pointer)
+   024F 3E 1C               640 	ld	a,#0x1C
+   0251 12                  641 	ld	(de),a
+                            642 ; genPlus
+                            643 ; genPlusIncr
+   0252 11 63 00            644 	ld	de,#_map + 99
+                            645 ; genAssign (pointer)
+   0255 3E 1E               646 	ld	a,#0x1E
+   0257 12                  647 	ld	(de),a
+                            648 ; genPlus
+                            649 ; genPlusIncr
+   0258 11 64 00            650 	ld	de,#_map + 100
+                            651 ; genAssign (pointer)
+   025B 3E 19               652 	ld	a,#0x19
+   025D 12                  653 	ld	(de),a
+                            654 ; genPlus
+                            655 ; genPlusIncr
+   025E 11 65 00            656 	ld	de,#_map + 101
+                            657 ; genAssign (pointer)
+   0261 3E 1B               658 	ld	a,#0x1B
+   0263 12                  659 	ld	(de),a
+                            660 ; genPlus
+                            661 ; genPlusIncr
+   0264 11 66 00            662 	ld	de,#_map + 102
+                            663 ; genAssign (pointer)
+   0267 3E 21               664 	ld	a,#0x21
+   0269 12                  665 	ld	(de),a
+                            666 ; genPlus
+                            667 ; genPlusIncr
+   026A 11 67 00            668 	ld	de,#_map + 103
+                            669 ; genAssign (pointer)
+   026D 3E 23               670 	ld	a,#0x23
+   026F 12                  671 	ld	(de),a
+                            672 ; genPlus
+                            673 ; genPlusIncr
+   0270 11 68 00            674 	ld	de,#_map + 104
+                            675 ; genAssign (pointer)
+   0273 3E 21               676 	ld	a,#0x21
+   0275 12                  677 	ld	(de),a
+                            678 ; genPlus
+                            679 ; genPlusIncr
+   0276 11 69 00            680 	ld	de,#_map + 105
+                            681 ; genAssign (pointer)
+   0279 3E 23               682 	ld	a,#0x23
+   027B 12                  683 	ld	(de),a
+                            684 ; genPlus
+                            685 ; genPlusIncr
+   027C 11 6A 00            686 	ld	de,#_map + 106
+                            687 ; genAssign (pointer)
+   027F 3E 21               688 	ld	a,#0x21
+   0281 12                  689 	ld	(de),a
+                            690 ; genPlus
+                            691 ; genPlusIncr
+   0282 11 6B 00            692 	ld	de,#_map + 107
+                            693 ; genAssign (pointer)
+   0285 3E 23               694 	ld	a,#0x23
+   0287 12                  695 	ld	(de),a
+                            696 ; genPlus
+                            697 ; genPlusIncr
+   0288 11 6C 00            698 	ld	de,#_map + 108
+                            699 ; genAssign (pointer)
+   028B 3E 21               700 	ld	a,#0x21
+   028D 12                  701 	ld	(de),a
+                            702 ; genPlus
+                            703 ; genPlusIncr
+   028E 11 6D 00            704 	ld	de,#_map + 109
+                            705 ; genAssign (pointer)
+   0291 3E 23               706 	ld	a,#0x23
+   0293 12                  707 	ld	(de),a
+                            708 ; genPlus
+                            709 ; genPlusIncr
+   0294 11 6E 00            710 	ld	de,#_map + 110
+                            711 ; genAssign (pointer)
+   0297 3E 21               712 	ld	a,#0x21
+   0299 12                  713 	ld	(de),a
+                            714 ; genPlus
+                            715 ; genPlusIncr
+   029A 11 6F 00            716 	ld	de,#_map + 111
+                            717 ; genAssign (pointer)
+   029D 3E 23               718 	ld	a,#0x23
+   029F 12                  719 	ld	(de),a
+                            720 ; genPlus
+                            721 ; genPlusIncr
+   02A0 11 70 00            722 	ld	de,#_map + 112
+                            723 ; genAssign (pointer)
+   02A3 3E 21               724 	ld	a,#0x21
+   02A5 12                  725 	ld	(de),a
+                            726 ; genPlus
+                            727 ; genPlusIncr
+   02A6 11 71 00            728 	ld	de,#_map + 113
+                            729 ; genAssign (pointer)
+   02A9 3E 23               730 	ld	a,#0x23
+   02AB 12                  731 	ld	(de),a
+                            732 ; genPlus
+                            733 ; genPlusIncr
+   02AC 11 72 00            734 	ld	de,#_map + 114
+                            735 ; genAssign (pointer)
+   02AF 3E 21               736 	ld	a,#0x21
+   02B1 12                  737 	ld	(de),a
+                            738 ; genPlus
+                            739 ; genPlusIncr
+   02B2 11 73 00            740 	ld	de,#_map + 115
+                            741 ; genAssign (pointer)
+   02B5 3E 23               742 	ld	a,#0x23
+   02B7 12                  743 	ld	(de),a
+                            744 ; genPlus
+                            745 ; genPlusIncr
+   02B8 11 74 00            746 	ld	de,#_map + 116
+                            747 ; genAssign (pointer)
+   02BB 3E 21               748 	ld	a,#0x21
+   02BD 12                  749 	ld	(de),a
+                            750 ; genPlus
+                            751 ; genPlusIncr
+   02BE 11 75 00            752 	ld	de,#_map + 117
+                            753 ; genAssign (pointer)
+   02C1 3E 23               754 	ld	a,#0x23
+   02C3 12                  755 	ld	(de),a
+                            756 ; genPlus
+                            757 ; genPlusIncr
+   02C4 11 76 00            758 	ld	de,#_map + 118
+                            759 ; genAssign (pointer)
+   02C7 3E 1D               760 	ld	a,#0x1D
+   02C9 12                  761 	ld	(de),a
+                            762 ; genPlus
+                            763 ; genPlusIncr
+   02CA 11 77 00            764 	ld	de,#_map + 119
+                            765 ; genAssign (pointer)
+   02CD 3E 1F               766 	ld	a,#0x1F
+   02CF 12                  767 	ld	(de),a
+                            768 ; genPlus
+                            769 ; genPlusIncr
+   02D0 11 78 00            770 	ld	de,#_map + 120
+                            771 ; genAssign (pointer)
+   02D3 3E 18               772 	ld	a,#0x18
+   02D5 12                  773 	ld	(de),a
+                            774 ; genPlus
+                            775 ; genPlusIncr
+   02D6 11 79 00            776 	ld	de,#_map + 121
+                            777 ; genAssign (pointer)
+   02D9 3E 1A               778 	ld	a,#0x1A
+   02DB 12                  779 	ld	(de),a
+                            780 ; genPlus
+                            781 ; genPlusIncr
+   02DC 11 7A 00            782 	ld	de,#_map + 122
+                            783 ; genAssign (pointer)
+   02DF 3E 20               784 	ld	a,#0x20
+   02E1 12                  785 	ld	(de),a
+                            786 ; genPlus
+                            787 ; genPlusIncr
+   02E2 11 7B 00            788 	ld	de,#_map + 123
+                            789 ; genAssign (pointer)
+   02E5 3E 22               790 	ld	a,#0x22
+   02E7 12                  791 	ld	(de),a
+                            792 ; genPlus
+                            793 ; genPlusIncr
+   02E8 11 7C 00            794 	ld	de,#_map + 124
+                            795 ; genAssign (pointer)
+   02EB 3E 20               796 	ld	a,#0x20
+   02ED 12                  797 	ld	(de),a
+                            798 ; genPlus
+                            799 ; genPlusIncr
+   02EE 11 7D 00            800 	ld	de,#_map + 125
+                            801 ; genAssign (pointer)
+   02F1 3E 22               802 	ld	a,#0x22
+   02F3 12                  803 	ld	(de),a
+                            804 ; genPlus
+                            805 ; genPlusIncr
+   02F4 11 7E 00            806 	ld	de,#_map + 126
+                            807 ; genAssign (pointer)
+   02F7 3E 20               808 	ld	a,#0x20
+   02F9 12                  809 	ld	(de),a
+                            810 ; genPlus
+                            811 ; genPlusIncr
+   02FA 11 7F 00            812 	ld	de,#_map + 127
+                            813 ; genAssign (pointer)
+   02FD 3E 22               814 	ld	a,#0x22
+   02FF 12                  815 	ld	(de),a
+                            816 ; genPlus
+                            817 ; genPlusIncr
+   0300 11 80 00            818 	ld	de,#_map + 128
+                            819 ; genAssign (pointer)
+   0303 3E 20               820 	ld	a,#0x20
+   0305 12                  821 	ld	(de),a
+                            822 ; genPlus
+                            823 ; genPlusIncr
+   0306 11 81 00            824 	ld	de,#_map + 129
+                            825 ; genAssign (pointer)
+   0309 3E 22               826 	ld	a,#0x22
+   030B 12                  827 	ld	(de),a
+                            828 ; genPlus
+                            829 ; genPlusIncr
+   030C 11 82 00            830 	ld	de,#_map + 130
+                            831 ; genAssign (pointer)
+   030F 3E 20               832 	ld	a,#0x20
+   0311 12                  833 	ld	(de),a
+                            834 ; genPlus
+                            835 ; genPlusIncr
+   0312 11 83 00            836 	ld	de,#_map + 131
+                            837 ; genAssign (pointer)
+   0315 3E 22               838 	ld	a,#0x22
+   0317 12                  839 	ld	(de),a
+                            840 ; genPlus
+                            841 ; genPlusIncr
+   0318 11 84 00            842 	ld	de,#_map + 132
+                            843 ; genAssign (pointer)
+   031B 3E 20               844 	ld	a,#0x20
+   031D 12                  845 	ld	(de),a
+                            846 ; genPlus
+                            847 ; genPlusIncr
+   031E 11 85 00            848 	ld	de,#_map + 133
+                            849 ; genAssign (pointer)
+   0321 3E 22               850 	ld	a,#0x22
+   0323 12                  851 	ld	(de),a
+                            852 ; genPlus
+                            853 ; genPlusIncr
+   0324 11 86 00            854 	ld	de,#_map + 134
+                            855 ; genAssign (pointer)
+   0327 3E 20               856 	ld	a,#0x20
+   0329 12                  857 	ld	(de),a
+                            858 ; genPlus
+                            859 ; genPlusIncr
+   032A 11 87 00            860 	ld	de,#_map + 135
+                            861 ; genAssign (pointer)
+   032D 3E 22               862 	ld	a,#0x22
+   032F 12                  863 	ld	(de),a
+                            864 ; genPlus
+                            865 ; genPlusIncr
+   0330 11 88 00            866 	ld	de,#_map + 136
+                            867 ; genAssign (pointer)
+   0333 3E 20               868 	ld	a,#0x20
+   0335 12                  869 	ld	(de),a
+                            870 ; genPlus
+                            871 ; genPlusIncr
+   0336 11 89 00            872 	ld	de,#_map + 137
+                            873 ; genAssign (pointer)
+   0339 3E 22               874 	ld	a,#0x22
+   033B 12                  875 	ld	(de),a
+                            876 ; genPlus
+                            877 ; genPlusIncr
+   033C 11 8A 00            878 	ld	de,#_map + 138
+                            879 ; genAssign (pointer)
+   033F 3E 1C               880 	ld	a,#0x1C
+   0341 12                  881 	ld	(de),a
+                            882 ; genPlus
+                            883 ; genPlusIncr
+   0342 11 8B 00            884 	ld	de,#_map + 139
+                            885 ; genAssign (pointer)
+   0345 3E 1E               886 	ld	a,#0x1E
+   0347 12                  887 	ld	(de),a
+                            888 ; genPlus
+                            889 ; genPlusIncr
+   0348 11 8C 00            890 	ld	de,#_map + 140
+                            891 ; genAssign (pointer)
+   034B 3E 19               892 	ld	a,#0x19
+   034D 12                  893 	ld	(de),a
+                            894 ; genPlus
+                            895 ; genPlusIncr
+   034E 11 8D 00            896 	ld	de,#_map + 141
+                            897 ; genAssign (pointer)
+   0351 3E 1B               898 	ld	a,#0x1B
+   0353 12                  899 	ld	(de),a
+                            900 ; genPlus
+                            901 ; genPlusIncr
+   0354 11 8E 00            902 	ld	de,#_map + 142
+                            903 ; genAssign (pointer)
+   0357 3E 21               904 	ld	a,#0x21
+   0359 12                  905 	ld	(de),a
+                            906 ; genPlus
+                            907 ; genPlusIncr
+   035A 11 8F 00            908 	ld	de,#_map + 143
+                            909 ; genAssign (pointer)
+   035D 3E 23               910 	ld	a,#0x23
+   035F 12                  911 	ld	(de),a
+                            912 ; genPlus
+                            913 ; genPlusIncr
+   0360 11 90 00            914 	ld	de,#_map + 144
+                            915 ; genAssign (pointer)
+   0363 3E 21               916 	ld	a,#0x21
+   0365 12                  917 	ld	(de),a
+                            918 ; genPlus
+                            919 ; genPlusIncr
+   0366 11 91 00            920 	ld	de,#_map + 145
+                            921 ; genAssign (pointer)
+   0369 3E 23               922 	ld	a,#0x23
+   036B 12                  923 	ld	(de),a
+                            924 ; genPlus
+                            925 ; genPlusIncr
+   036C 11 92 00            926 	ld	de,#_map + 146
+                            927 ; genAssign (pointer)
+   036F 3E 21               928 	ld	a,#0x21
+   0371 12                  929 	ld	(de),a
+                            930 ; genPlus
+                            931 ; genPlusIncr
+   0372 11 93 00            932 	ld	de,#_map + 147
+                            933 ; genAssign (pointer)
+   0375 3E 23               934 	ld	a,#0x23
+   0377 12                  935 	ld	(de),a
+                            936 ; genPlus
+                            937 ; genPlusIncr
+   0378 11 94 00            938 	ld	de,#_map + 148
+                            939 ; genAssign (pointer)
+   037B 3E 21               940 	ld	a,#0x21
+   037D 12                  941 	ld	(de),a
+                            942 ; genPlus
+                            943 ; genPlusIncr
+   037E 11 95 00            944 	ld	de,#_map + 149
+                            945 ; genAssign (pointer)
+   0381 3E 23               946 	ld	a,#0x23
+   0383 12                  947 	ld	(de),a
+                            948 ; genPlus
+                            949 ; genPlusIncr
+   0384 11 96 00            950 	ld	de,#_map + 150
+                            951 ; genAssign (pointer)
+   0387 3E 21               952 	ld	a,#0x21
+   0389 12                  953 	ld	(de),a
+                            954 ; genPlus
+                            955 ; genPlusIncr
+   038A 11 97 00            956 	ld	de,#_map + 151
+                            957 ; genAssign (pointer)
+   038D 3E 23               958 	ld	a,#0x23
+   038F 12                  959 	ld	(de),a
+                            960 ; genPlus
+                            961 ; genPlusIncr
+   0390 11 98 00            962 	ld	de,#_map + 152
+                            963 ; genAssign (pointer)
+   0393 3E 21               964 	ld	a,#0x21
+   0395 12                  965 	ld	(de),a
+                            966 ; genPlus
+                            967 ; genPlusIncr
+   0396 11 99 00            968 	ld	de,#_map + 153
+                            969 ; genAssign (pointer)
+   0399 3E 23               970 	ld	a,#0x23
+   039B 12                  971 	ld	(de),a
+                            972 ; genPlus
+                            973 ; genPlusIncr
+   039C 11 9A 00            974 	ld	de,#_map + 154
+                            975 ; genAssign (pointer)
+   039F 3E 21               976 	ld	a,#0x21
+   03A1 12                  977 	ld	(de),a
+                            978 ; genPlus
+                            979 ; genPlusIncr
+   03A2 11 9B 00            980 	ld	de,#_map + 155
+                            981 ; genAssign (pointer)
+   03A5 3E 23               982 	ld	a,#0x23
+   03A7 12                  983 	ld	(de),a
+                            984 ; genPlus
+                            985 ; genPlusIncr
+   03A8 11 9C 00            986 	ld	de,#_map + 156
+                            987 ; genAssign (pointer)
+   03AB 3E 21               988 	ld	a,#0x21
+   03AD 12                  989 	ld	(de),a
+                            990 ; genPlus
+                            991 ; genPlusIncr
+   03AE 11 9D 00            992 	ld	de,#_map + 157
+                            993 ; genAssign (pointer)
+   03B1 3E 23               994 	ld	a,#0x23
+   03B3 12                  995 	ld	(de),a
+                            996 ; genPlus
+                            997 ; genPlusIncr
+   03B4 11 9E 00            998 	ld	de,#_map + 158
+                            999 ; genAssign (pointer)
+   03B7 3E 1D              1000 	ld	a,#0x1D
+   03B9 12                 1001 	ld	(de),a
+                           1002 ; genPlus
+                           1003 ; genPlusIncr
+   03BA 11 9F 00           1004 	ld	de,#_map + 159
+                           1005 ; genAssign (pointer)
+   03BD 3E 1F              1006 	ld	a,#0x1F
+   03BF 12                 1007 	ld	(de),a
+                           1008 ; genPlus
+                           1009 ; genPlusIncr
+   03C0 11 A0 00           1010 	ld	de,#_map + 160
+                           1011 ; genAssign (pointer)
+   03C3 3E 18              1012 	ld	a,#0x18
+   03C5 12                 1013 	ld	(de),a
+                           1014 ; genPlus
+                           1015 ; genPlusIncr
+   03C6 11 A1 00           1016 	ld	de,#_map + 161
+                           1017 ; genAssign (pointer)
+   03C9 3E 1A              1018 	ld	a,#0x1A
+   03CB 12                 1019 	ld	(de),a
+                           1020 ; genPlus
+                           1021 ; genPlusIncr
+   03CC 11 A2 00           1022 	ld	de,#_map + 162
+                           1023 ; genAssign (pointer)
+   03CF 3E 20              1024 	ld	a,#0x20
+   03D1 12                 1025 	ld	(de),a
+                           1026 ; genPlus
+                           1027 ; genPlusIncr
+   03D2 11 A3 00           1028 	ld	de,#_map + 163
+                           1029 ; genAssign (pointer)
+   03D5 3E 22              1030 	ld	a,#0x22
+   03D7 12                 1031 	ld	(de),a
+                           1032 ; genPlus
+                           1033 ; genPlusIncr
+   03D8 11 A4 00           1034 	ld	de,#_map + 164
+                           1035 ; genAssign (pointer)
+   03DB 3E 20              1036 	ld	a,#0x20
+   03DD 12                 1037 	ld	(de),a
+                           1038 ; genPlus
+                           1039 ; genPlusIncr
+   03DE 11 A5 00           1040 	ld	de,#_map + 165
+                           1041 ; genAssign (pointer)
+   03E1 3E 22              1042 	ld	a,#0x22
+   03E3 12                 1043 	ld	(de),a
+                           1044 ; genPlus
+                           1045 ; genPlusIncr
+   03E4 11 A6 00           1046 	ld	de,#_map + 166
+                           1047 ; genAssign (pointer)
+   03E7 3E 20              1048 	ld	a,#0x20
+   03E9 12                 1049 	ld	(de),a
+                           1050 ; genPlus
+                           1051 ; genPlusIncr
+   03EA 11 A7 00           1052 	ld	de,#_map + 167
+                           1053 ; genAssign (pointer)
+   03ED 3E 22              1054 	ld	a,#0x22
+   03EF 12                 1055 	ld	(de),a
+                           1056 ; genPlus
+                           1057 ; genPlusIncr
+   03F0 11 A8 00           1058 	ld	de,#_map + 168
+                           1059 ; genAssign (pointer)
+   03F3 3E 20              1060 	ld	a,#0x20
+   03F5 12                 1061 	ld	(de),a
+                           1062 ; genPlus
+                           1063 ; genPlusIncr
+   03F6 11 A9 00           1064 	ld	de,#_map + 169
+                           1065 ; genAssign (pointer)
+   03F9 3E 22              1066 	ld	a,#0x22
+   03FB 12                 1067 	ld	(de),a
+                           1068 ; genPlus
+                           1069 ; genPlusIncr
+   03FC 11 AA 00           1070 	ld	de,#_map + 170
+                           1071 ; genAssign (pointer)
+   03FF 3E 20              1072 	ld	a,#0x20
+   0401 12                 1073 	ld	(de),a
+                           1074 ; genPlus
+                           1075 ; genPlusIncr
+   0402 11 AB 00           1076 	ld	de,#_map + 171
+                           1077 ; genAssign (pointer)
+   0405 3E 22              1078 	ld	a,#0x22
+   0407 12                 1079 	ld	(de),a
+                           1080 ; genPlus
+                           1081 ; genPlusIncr
+   0408 11 AC 00           1082 	ld	de,#_map + 172
+                           1083 ; genAssign (pointer)
+   040B 3E 20              1084 	ld	a,#0x20
+   040D 12                 1085 	ld	(de),a
+                           1086 ; genPlus
+                           1087 ; genPlusIncr
+   040E 11 AD 00           1088 	ld	de,#_map + 173
+                           1089 ; genAssign (pointer)
+   0411 3E 22              1090 	ld	a,#0x22
+   0413 12                 1091 	ld	(de),a
+                           1092 ; genPlus
+                           1093 ; genPlusIncr
+   0414 11 AE 00           1094 	ld	de,#_map + 174
+                           1095 ; genAssign (pointer)
+   0417 3E 20              1096 	ld	a,#0x20
+   0419 12                 1097 	ld	(de),a
+                           1098 ; genPlus
+                           1099 ; genPlusIncr
+   041A 11 AF 00           1100 	ld	de,#_map + 175
+                           1101 ; genAssign (pointer)
+   041D 3E 22              1102 	ld	a,#0x22
+   041F 12                 1103 	ld	(de),a
+                           1104 ; genPlus
+                           1105 ; genPlusIncr
+   0420 11 B0 00           1106 	ld	de,#_map + 176
+                           1107 ; genAssign (pointer)
+   0423 3E 20              1108 	ld	a,#0x20
+   0425 12                 1109 	ld	(de),a
+                           1110 ; genPlus
+                           1111 ; genPlusIncr
+   0426 11 B1 00           1112 	ld	de,#_map + 177
+                           1113 ; genAssign (pointer)
+   0429 3E 22              1114 	ld	a,#0x22
+   042B 12                 1115 	ld	(de),a
+                           1116 ; genPlus
+                           1117 ; genPlusIncr
+   042C 11 B2 00           1118 	ld	de,#_map + 178
+                           1119 ; genAssign (pointer)
+   042F 3E 1C              1120 	ld	a,#0x1C
+   0431 12                 1121 	ld	(de),a
+                           1122 ; genPlus
+                           1123 ; genPlusIncr
+   0432 11 B3 00           1124 	ld	de,#_map + 179
+                           1125 ; genAssign (pointer)
+   0435 3E 1E              1126 	ld	a,#0x1E
+   0437 12                 1127 	ld	(de),a
+                           1128 ; genPlus
+                           1129 ; genPlusIncr
+   0438 11 B4 00           1130 	ld	de,#_map + 180
+                           1131 ; genAssign (pointer)
+   043B 3E 19              1132 	ld	a,#0x19
+   043D 12                 1133 	ld	(de),a
+                           1134 ; genPlus
+                           1135 ; genPlusIncr
+   043E 11 B5 00           1136 	ld	de,#_map + 181
+                           1137 ; genAssign (pointer)
+   0441 3E 1B              1138 	ld	a,#0x1B
+   0443 12                 1139 	ld	(de),a
+                           1140 ; genPlus
+                           1141 ; genPlusIncr
+   0444 11 B6 00           1142 	ld	de,#_map + 182
+                           1143 ; genAssign (pointer)
+   0447 3E 21              1144 	ld	a,#0x21
+   0449 12                 1145 	ld	(de),a
+                           1146 ; genPlus
+                           1147 ; genPlusIncr
+   044A 11 B7 00           1148 	ld	de,#_map + 183
+                           1149 ; genAssign (pointer)
+   044D 3E 23              1150 	ld	a,#0x23
+   044F 12                 1151 	ld	(de),a
+                           1152 ; genPlus
+                           1153 ; genPlusIncr
+   0450 11 B8 00           1154 	ld	de,#_map + 184
+                           1155 ; genAssign (pointer)
+   0453 3E 21              1156 	ld	a,#0x21
+   0455 12                 1157 	ld	(de),a
+                           1158 ; genPlus
+                           1159 ; genPlusIncr
+   0456 11 B9 00           1160 	ld	de,#_map + 185
+                           1161 ; genAssign (pointer)
+   0459 3E 23              1162 	ld	a,#0x23
+   045B 12                 1163 	ld	(de),a
+                           1164 ; genPlus
+                           1165 ; genPlusIncr
+   045C 11 BA 00           1166 	ld	de,#_map + 186
+                           1167 ; genAssign (pointer)
+   045F 3E 21              1168 	ld	a,#0x21
+   0461 12                 1169 	ld	(de),a
+                           1170 ; genPlus
+                           1171 ; genPlusIncr
+   0462 11 BB 00           1172 	ld	de,#_map + 187
+                           1173 ; genAssign (pointer)
+   0465 3E 23              1174 	ld	a,#0x23
+   0467 12                 1175 	ld	(de),a
+                           1176 ; genPlus
+                           1177 ; genPlusIncr
+   0468 11 BC 00           1178 	ld	de,#_map + 188
+                           1179 ; genAssign (pointer)
+   046B 3E 21              1180 	ld	a,#0x21
+   046D 12                 1181 	ld	(de),a
+                           1182 ; genPlus
+                           1183 ; genPlusIncr
+   046E 11 BD 00           1184 	ld	de,#_map + 189
+                           1185 ; genAssign (pointer)
+   0471 3E 23              1186 	ld	a,#0x23
+   0473 12                 1187 	ld	(de),a
+                           1188 ; genPlus
+                           1189 ; genPlusIncr
+   0474 11 BE 00           1190 	ld	de,#_map + 190
+                           1191 ; genAssign (pointer)
+   0477 3E 21              1192 	ld	a,#0x21
+   0479 12                 1193 	ld	(de),a
+                           1194 ; genPlus
+                           1195 ; genPlusIncr
+   047A 11 BF 00           1196 	ld	de,#_map + 191
+                           1197 ; genAssign (pointer)
+   047D 3E 23              1198 	ld	a,#0x23
+   047F 12                 1199 	ld	(de),a
+                           1200 ; genPlus
+                           1201 ; genPlusIncr
+   0480 11 C0 00           1202 	ld	de,#_map + 192
+                           1203 ; genAssign (pointer)
+   0483 3E 21              1204 	ld	a,#0x21
+   0485 12                 1205 	ld	(de),a
+                           1206 ; genPlus
+                           1207 ; genPlusIncr
+   0486 11 C1 00           1208 	ld	de,#_map + 193
+                           1209 ; genAssign (pointer)
+   0489 3E 23              1210 	ld	a,#0x23
+   048B 12                 1211 	ld	(de),a
+                           1212 ; genPlus
+                           1213 ; genPlusIncr
+   048C 11 C2 00           1214 	ld	de,#_map + 194
+                           1215 ; genAssign (pointer)
+   048F 3E 21              1216 	ld	a,#0x21
+   0491 12                 1217 	ld	(de),a
+                           1218 ; genPlus
+                           1219 ; genPlusIncr
+   0492 11 C3 00           1220 	ld	de,#_map + 195
+                           1221 ; genAssign (pointer)
+   0495 3E 23              1222 	ld	a,#0x23
+   0497 12                 1223 	ld	(de),a
+                           1224 ; genPlus
+                           1225 ; genPlusIncr
+   0498 11 C4 00           1226 	ld	de,#_map + 196
+                           1227 ; genAssign (pointer)
+   049B 3E 21              1228 	ld	a,#0x21
+   049D 12                 1229 	ld	(de),a
+                           1230 ; genPlus
+                           1231 ; genPlusIncr
+   049E 11 C5 00           1232 	ld	de,#_map + 197
+                           1233 ; genAssign (pointer)
+   04A1 3E 23              1234 	ld	a,#0x23
+   04A3 12                 1235 	ld	(de),a
+                           1236 ; genPlus
+                           1237 ; genPlusIncr
+   04A4 11 C6 00           1238 	ld	de,#_map + 198
+                           1239 ; genAssign (pointer)
+   04A7 3E 1D              1240 	ld	a,#0x1D
+   04A9 12                 1241 	ld	(de),a
+                           1242 ; genPlus
+                           1243 ; genPlusIncr
+   04AA 11 C7 00           1244 	ld	de,#_map + 199
+                           1245 ; genAssign (pointer)
+   04AD 3E 1F              1246 	ld	a,#0x1F
+   04AF 12                 1247 	ld	(de),a
+                           1248 ; genPlus
+                           1249 ; genPlusIncr
+   04B0 11 C8 00           1250 	ld	de,#_map + 200
+                           1251 ; genAssign (pointer)
+   04B3 3E 18              1252 	ld	a,#0x18
+   04B5 12                 1253 	ld	(de),a
+                           1254 ; genPlus
+                           1255 ; genPlusIncr
+   04B6 11 C9 00           1256 	ld	de,#_map + 201
+                           1257 ; genAssign (pointer)
+   04B9 3E 1A              1258 	ld	a,#0x1A
+   04BB 12                 1259 	ld	(de),a
+                           1260 ; genPlus
+                           1261 ; genPlusIncr
+   04BC 11 CA 00           1262 	ld	de,#_map + 202
+                           1263 ; genAssign (pointer)
+   04BF 3E 20              1264 	ld	a,#0x20
+   04C1 12                 1265 	ld	(de),a
+                           1266 ; genPlus
+                           1267 ; genPlusIncr
+   04C2 11 CB 00           1268 	ld	de,#_map + 203
+                           1269 ; genAssign (pointer)
+   04C5 3E 22              1270 	ld	a,#0x22
+   04C7 12                 1271 	ld	(de),a
+                           1272 ; genPlus
+                           1273 ; genPlusIncr
+   04C8 11 CC 00           1274 	ld	de,#_map + 204
+                           1275 ; genAssign (pointer)
+   04CB 3E 20              1276 	ld	a,#0x20
+   04CD 12                 1277 	ld	(de),a
+                           1278 ; genPlus
+                           1279 ; genPlusIncr
+   04CE 11 CD 00           1280 	ld	de,#_map + 205
+                           1281 ; genAssign (pointer)
+   04D1 3E 22              1282 	ld	a,#0x22
+   04D3 12                 1283 	ld	(de),a
+                           1284 ; genPlus
+                           1285 ; genPlusIncr
+   04D4 11 CE 00           1286 	ld	de,#_map + 206
+                           1287 ; genAssign (pointer)
+   04D7 3E 20              1288 	ld	a,#0x20
+   04D9 12                 1289 	ld	(de),a
+                           1290 ; genPlus
+                           1291 ; genPlusIncr
+   04DA 11 CF 00           1292 	ld	de,#_map + 207
+                           1293 ; genAssign (pointer)
+   04DD 3E 22              1294 	ld	a,#0x22
+   04DF 12                 1295 	ld	(de),a
+                           1296 ; genPlus
+                           1297 ; genPlusIncr
+   04E0 11 D0 00           1298 	ld	de,#_map + 208
+                           1299 ; genAssign (pointer)
+   04E3 3E 20              1300 	ld	a,#0x20
+   04E5 12                 1301 	ld	(de),a
+                           1302 ; genPlus
+                           1303 ; genPlusIncr
+   04E6 11 D1 00           1304 	ld	de,#_map + 209
+                           1305 ; genAssign (pointer)
+   04E9 3E 22              1306 	ld	a,#0x22
+   04EB 12                 1307 	ld	(de),a
+                           1308 ; genPlus
+                           1309 ; genPlusIncr
+   04EC 11 D2 00           1310 	ld	de,#_map + 210
+                           1311 ; genAssign (pointer)
+   04EF 3E 20              1312 	ld	a,#0x20
+   04F1 12                 1313 	ld	(de),a
+                           1314 ; genPlus
+                           1315 ; genPlusIncr
+   04F2 11 D3 00           1316 	ld	de,#_map + 211
+                           1317 ; genAssign (pointer)
+   04F5 3E 22              1318 	ld	a,#0x22
+   04F7 12                 1319 	ld	(de),a
+                           1320 ; genPlus
+                           1321 ; genPlusIncr
+   04F8 11 D4 00           1322 	ld	de,#_map + 212
+                           1323 ; genAssign (pointer)
+   04FB 3E 20              1324 	ld	a,#0x20
+   04FD 12                 1325 	ld	(de),a
+                           1326 ; genPlus
+                           1327 ; genPlusIncr
+   04FE 11 D5 00           1328 	ld	de,#_map + 213
+                           1329 ; genAssign (pointer)
+   0501 3E 22              1330 	ld	a,#0x22
+   0503 12                 1331 	ld	(de),a
+                           1332 ; genPlus
+                           1333 ; genPlusIncr
+   0504 11 D6 00           1334 	ld	de,#_map + 214
+                           1335 ; genAssign (pointer)
+   0507 3E 20              1336 	ld	a,#0x20
+   0509 12                 1337 	ld	(de),a
+                           1338 ; genPlus
+                           1339 ; genPlusIncr
+   050A 11 D7 00           1340 	ld	de,#_map + 215
+                           1341 ; genAssign (pointer)
+   050D 3E 22              1342 	ld	a,#0x22
+   050F 12                 1343 	ld	(de),a
+                           1344 ; genPlus
+                           1345 ; genPlusIncr
+   0510 11 D8 00           1346 	ld	de,#_map + 216
+                           1347 ; genAssign (pointer)
+   0513 3E 20              1348 	ld	a,#0x20
+   0515 12                 1349 	ld	(de),a
+                           1350 ; genPlus
+                           1351 ; genPlusIncr
+   0516 11 D9 00           1352 	ld	de,#_map + 217
+                           1353 ; genAssign (pointer)
+   0519 3E 22              1354 	ld	a,#0x22
+   051B 12                 1355 	ld	(de),a
+                           1356 ; genPlus
+                           1357 ; genPlusIncr
+   051C 11 DA 00           1358 	ld	de,#_map + 218
+                           1359 ; genAssign (pointer)
+   051F 3E 1C              1360 	ld	a,#0x1C
+   0521 12                 1361 	ld	(de),a
+                           1362 ; genPlus
+                           1363 ; genPlusIncr
+   0522 11 DB 00           1364 	ld	de,#_map + 219
+                           1365 ; genAssign (pointer)
+   0525 3E 1E              1366 	ld	a,#0x1E
+   0527 12                 1367 	ld	(de),a
+                           1368 ; genPlus
+                           1369 ; genPlusIncr
+   0528 11 DC 00           1370 	ld	de,#_map + 220
+                           1371 ; genAssign (pointer)
+   052B 3E 19              1372 	ld	a,#0x19
+   052D 12                 1373 	ld	(de),a
+                           1374 ; genPlus
+                           1375 ; genPlusIncr
+   052E 11 DD 00           1376 	ld	de,#_map + 221
+                           1377 ; genAssign (pointer)
+   0531 3E 1B              1378 	ld	a,#0x1B
+   0533 12                 1379 	ld	(de),a
+                           1380 ; genPlus
+                           1381 ; genPlusIncr
+   0534 11 DE 00           1382 	ld	de,#_map + 222
+                           1383 ; genAssign (pointer)
+   0537 3E 21              1384 	ld	a,#0x21
+   0539 12                 1385 	ld	(de),a
+                           1386 ; genPlus
+                           1387 ; genPlusIncr
+   053A 11 DF 00           1388 	ld	de,#_map + 223
+                           1389 ; genAssign (pointer)
+   053D 3E 23              1390 	ld	a,#0x23
+   053F 12                 1391 	ld	(de),a
+                           1392 ; genPlus
+                           1393 ; genPlusIncr
+   0540 11 E0 00           1394 	ld	de,#_map + 224
+                           1395 ; genAssign (pointer)
+   0543 3E 21              1396 	ld	a,#0x21
+   0545 12                 1397 	ld	(de),a
+                           1398 ; genPlus
+                           1399 ; genPlusIncr
+   0546 11 E1 00           1400 	ld	de,#_map + 225
+                           1401 ; genAssign (pointer)
+   0549 3E 23              1402 	ld	a,#0x23
+   054B 12                 1403 	ld	(de),a
+                           1404 ; genPlus
+                           1405 ; genPlusIncr
+   054C 11 E2 00           1406 	ld	de,#_map + 226
+                           1407 ; genAssign (pointer)
+   054F 3E 21              1408 	ld	a,#0x21
+   0551 12                 1409 	ld	(de),a
+                           1410 ; genPlus
+                           1411 ; genPlusIncr
+   0552 11 E3 00           1412 	ld	de,#_map + 227
+                           1413 ; genAssign (pointer)
+   0555 3E 23              1414 	ld	a,#0x23
+   0557 12                 1415 	ld	(de),a
+                           1416 ; genPlus
+                           1417 ; genPlusIncr
+   0558 11 E4 00           1418 	ld	de,#_map + 228
+                           1419 ; genAssign (pointer)
+   055B 3E 21              1420 	ld	a,#0x21
+   055D 12                 1421 	ld	(de),a
+                           1422 ; genPlus
+                           1423 ; genPlusIncr
+   055E 11 E5 00           1424 	ld	de,#_map + 229
+                           1425 ; genAssign (pointer)
+   0561 3E 23              1426 	ld	a,#0x23
+   0563 12                 1427 	ld	(de),a
+                           1428 ; genPlus
+                           1429 ; genPlusIncr
+   0564 11 E6 00           1430 	ld	de,#_map + 230
+                           1431 ; genAssign (pointer)
+   0567 3E 21              1432 	ld	a,#0x21
+   0569 12                 1433 	ld	(de),a
+                           1434 ; genPlus
+                           1435 ; genPlusIncr
+   056A 11 E7 00           1436 	ld	de,#_map + 231
+                           1437 ; genAssign (pointer)
+   056D 3E 23              1438 	ld	a,#0x23
+   056F 12                 1439 	ld	(de),a
+                           1440 ; genPlus
+                           1441 ; genPlusIncr
+   0570 11 E8 00           1442 	ld	de,#_map + 232
+                           1443 ; genAssign (pointer)
+   0573 3E 21              1444 	ld	a,#0x21
+   0575 12                 1445 	ld	(de),a
+                           1446 ; genPlus
+                           1447 ; genPlusIncr
+   0576 11 E9 00           1448 	ld	de,#_map + 233
+                           1449 ; genAssign (pointer)
+   0579 3E 23              1450 	ld	a,#0x23
+   057B 12                 1451 	ld	(de),a
+                           1452 ; genPlus
+                           1453 ; genPlusIncr
+   057C 11 EA 00           1454 	ld	de,#_map + 234
+                           1455 ; genAssign (pointer)
+   057F 3E 21              1456 	ld	a,#0x21
+   0581 12                 1457 	ld	(de),a
+                           1458 ; genPlus
+                           1459 ; genPlusIncr
+   0582 11 EB 00           1460 	ld	de,#_map + 235
+                           1461 ; genAssign (pointer)
+   0585 3E 23              1462 	ld	a,#0x23
+   0587 12                 1463 	ld	(de),a
+                           1464 ; genPlus
+                           1465 ; genPlusIncr
+   0588 11 EC 00           1466 	ld	de,#_map + 236
+                           1467 ; genAssign (pointer)
+   058B 3E 21              1468 	ld	a,#0x21
+   058D 12                 1469 	ld	(de),a
+                           1470 ; genPlus
+                           1471 ; genPlusIncr
+   058E 11 ED 00           1472 	ld	de,#_map + 237
+                           1473 ; genAssign (pointer)
+   0591 3E 23              1474 	ld	a,#0x23
+   0593 12                 1475 	ld	(de),a
+                           1476 ; genPlus
+                           1477 ; genPlusIncr
+   0594 11 EE 00           1478 	ld	de,#_map + 238
+                           1479 ; genAssign (pointer)
+   0597 3E 1D              1480 	ld	a,#0x1D
+   0599 12                 1481 	ld	(de),a
+                           1482 ; genPlus
+                           1483 ; genPlusIncr
+   059A 11 EF 00           1484 	ld	de,#_map + 239
+                           1485 ; genAssign (pointer)
+   059D 3E 1F              1486 	ld	a,#0x1F
+   059F 12                 1487 	ld	(de),a
+                           1488 ; genPlus
+                           1489 ; genPlusIncr
+   05A0 11 F0 00           1490 	ld	de,#_map + 240
+                           1491 ; genAssign (pointer)
+   05A3 3E 18              1492 	ld	a,#0x18
+   05A5 12                 1493 	ld	(de),a
+                           1494 ; genPlus
+                           1495 ; genPlusIncr
+   05A6 11 F1 00           1496 	ld	de,#_map + 241
+                           1497 ; genAssign (pointer)
+   05A9 3E 1A              1498 	ld	a,#0x1A
+   05AB 12                 1499 	ld	(de),a
+                           1500 ; genPlus
+                           1501 ; genPlusIncr
+   05AC 11 F2 00           1502 	ld	de,#_map + 242
+                           1503 ; genAssign (pointer)
+   05AF 3E 20              1504 	ld	a,#0x20
+   05B1 12                 1505 	ld	(de),a
+                           1506 ; genPlus
+                           1507 ; genPlusIncr
+   05B2 11 F3 00           1508 	ld	de,#_map + 243
+                           1509 ; genAssign (pointer)
+   05B5 3E 22              1510 	ld	a,#0x22
+   05B7 12                 1511 	ld	(de),a
+                           1512 ; genPlus
+                           1513 ; genPlusIncr
+   05B8 11 F4 00           1514 	ld	de,#_map + 244
+                           1515 ; genAssign (pointer)
+   05BB 3E 20              1516 	ld	a,#0x20
+   05BD 12                 1517 	ld	(de),a
+                           1518 ; genPlus
+                           1519 ; genPlusIncr
+   05BE 11 F5 00           1520 	ld	de,#_map + 245
+                           1521 ; genAssign (pointer)
+   05C1 3E 22              1522 	ld	a,#0x22
+   05C3 12                 1523 	ld	(de),a
+                           1524 ; genPlus
+                           1525 ; genPlusIncr
+   05C4 11 F6 00           1526 	ld	de,#_map + 246
+                           1527 ; genAssign (pointer)
+   05C7 3E 20              1528 	ld	a,#0x20
+   05C9 12                 1529 	ld	(de),a
+                           1530 ; genPlus
+                           1531 ; genPlusIncr
+   05CA 11 F7 00           1532 	ld	de,#_map + 247
+                           1533 ; genAssign (pointer)
+   05CD 3E 22              1534 	ld	a,#0x22
+   05CF 12                 1535 	ld	(de),a
+                           1536 ; genPlus
+                           1537 ; genPlusIncr
+   05D0 11 F8 00           1538 	ld	de,#_map + 248
+                           1539 ; genAssign (pointer)
+   05D3 3E 20              1540 	ld	a,#0x20
+   05D5 12                 1541 	ld	(de),a
+                           1542 ; genPlus
+                           1543 ; genPlusIncr
+   05D6 11 F9 00           1544 	ld	de,#_map + 249
+                           1545 ; genAssign (pointer)
+   05D9 3E 22              1546 	ld	a,#0x22
+   05DB 12                 1547 	ld	(de),a
+                           1548 ; genPlus
+                           1549 ; genPlusIncr
+   05DC 11 FA 00           1550 	ld	de,#_map + 250
+                           1551 ; genAssign (pointer)
+   05DF 3E 20              1552 	ld	a,#0x20
+   05E1 12                 1553 	ld	(de),a
+                           1554 ; genPlus
+                           1555 ; genPlusIncr
+   05E2 11 FB 00           1556 	ld	de,#_map + 251
+                           1557 ; genAssign (pointer)
+   05E5 3E 22              1558 	ld	a,#0x22
+   05E7 12                 1559 	ld	(de),a
+                           1560 ; genPlus
+                           1561 ; genPlusIncr
+   05E8 11 FC 00           1562 	ld	de,#_map + 252
+                           1563 ; genAssign (pointer)
+   05EB 3E 20              1564 	ld	a,#0x20
+   05ED 12                 1565 	ld	(de),a
+                           1566 ; genPlus
+                           1567 ; genPlusIncr
+   05EE 11 FD 00           1568 	ld	de,#_map + 253
+                           1569 ; genAssign (pointer)
+   05F1 3E 22              1570 	ld	a,#0x22
+   05F3 12                 1571 	ld	(de),a
+                           1572 ; genPlus
+                           1573 ; genPlusIncr
+   05F4 11 FE 00           1574 	ld	de,#_map + 254
+                           1575 ; genAssign (pointer)
+   05F7 3E 20              1576 	ld	a,#0x20
+   05F9 12                 1577 	ld	(de),a
+                           1578 ; genPlus
+                           1579 ; genPlusIncr
+   05FA 11 FF 00           1580 	ld	de,#_map + 255
+                           1581 ; genAssign (pointer)
+   05FD 3E 22              1582 	ld	a,#0x22
+   05FF 12                 1583 	ld	(de),a
+                           1584 ; genPlus
+                           1585 ; genPlusIncr
+   0600 11 00 01           1586 	ld	de,#_map + 256
+                           1587 ; genAssign (pointer)
+   0603 3E 20              1588 	ld	a,#0x20
+   0605 12                 1589 	ld	(de),a
+                           1590 ; genPlus
+                           1591 ; genPlusIncr
+   0606 11 01 01           1592 	ld	de,#_map + 257
+                           1593 ; genAssign (pointer)
+   0609 3E 22              1594 	ld	a,#0x22
+   060B 12                 1595 	ld	(de),a
+                           1596 ; genPlus
+                           1597 ; genPlusIncr
+   060C 11 02 01           1598 	ld	de,#_map + 258
+                           1599 ; genAssign (pointer)
+   060F 3E 1C              1600 	ld	a,#0x1C
+   0611 12                 1601 	ld	(de),a
+                           1602 ; genPlus
+                           1603 ; genPlusIncr
+   0612 11 03 01           1604 	ld	de,#_map + 259
+                           1605 ; genAssign (pointer)
+   0615 3E 1E              1606 	ld	a,#0x1E
+   0617 12                 1607 	ld	(de),a
+                           1608 ; genPlus
+                           1609 ; genPlusIncr
+   0618 11 04 01           1610 	ld	de,#_map + 260
+                           1611 ; genAssign (pointer)
+   061B 3E 19              1612 	ld	a,#0x19
+   061D 12                 1613 	ld	(de),a
+                           1614 ; genPlus
+                           1615 ; genPlusIncr
+   061E 11 05 01           1616 	ld	de,#_map + 261
+                           1617 ; genAssign (pointer)
+   0621 3E 1B              1618 	ld	a,#0x1B
+   0623 12                 1619 	ld	(de),a
+                           1620 ; genPlus
+                           1621 ; genPlusIncr
+   0624 11 06 01           1622 	ld	de,#_map + 262
+                           1623 ; genAssign (pointer)
+   0627 3E 21              1624 	ld	a,#0x21
+   0629 12                 1625 	ld	(de),a
+                           1626 ; genPlus
+                           1627 ; genPlusIncr
+   062A 11 07 01           1628 	ld	de,#_map + 263
+                           1629 ; genAssign (pointer)
+   062D 3E 23              1630 	ld	a,#0x23
+   062F 12                 1631 	ld	(de),a
+                           1632 ; genPlus
+                           1633 ; genPlusIncr
+   0630 11 08 01           1634 	ld	de,#_map + 264
+                           1635 ; genAssign (pointer)
+   0633 3E 21              1636 	ld	a,#0x21
+   0635 12                 1637 	ld	(de),a
+                           1638 ; genPlus
+                           1639 ; genPlusIncr
+   0636 11 09 01           1640 	ld	de,#_map + 265
+                           1641 ; genAssign (pointer)
+   0639 3E 23              1642 	ld	a,#0x23
+   063B 12                 1643 	ld	(de),a
+                           1644 ; genPlus
+                           1645 ; genPlusIncr
+   063C 11 0A 01           1646 	ld	de,#_map + 266
+                           1647 ; genAssign (pointer)
+   063F 3E 21              1648 	ld	a,#0x21
+   0641 12                 1649 	ld	(de),a
+                           1650 ; genPlus
+                           1651 ; genPlusIncr
+   0642 11 0B 01           1652 	ld	de,#_map + 267
+                           1653 ; genAssign (pointer)
+   0645 3E 23              1654 	ld	a,#0x23
+   0647 12                 1655 	ld	(de),a
+                           1656 ; genPlus
+                           1657 ; genPlusIncr
+   0648 11 0C 01           1658 	ld	de,#_map + 268
+                           1659 ; genAssign (pointer)
+   064B 3E 21              1660 	ld	a,#0x21
+   064D 12                 1661 	ld	(de),a
+                           1662 ; genPlus
+                           1663 ; genPlusIncr
+   064E 11 0D 01           1664 	ld	de,#_map + 269
+                           1665 ; genAssign (pointer)
+   0651 3E 23              1666 	ld	a,#0x23
+   0653 12                 1667 	ld	(de),a
+                           1668 ; genPlus
+                           1669 ; genPlusIncr
+   0654 11 0E 01           1670 	ld	de,#_map + 270
+                           1671 ; genAssign (pointer)
+   0657 3E 21              1672 	ld	a,#0x21
+   0659 12                 1673 	ld	(de),a
+                           1674 ; genPlus
+                           1675 ; genPlusIncr
+   065A 11 0F 01           1676 	ld	de,#_map + 271
+                           1677 ; genAssign (pointer)
+   065D 3E 23              1678 	ld	a,#0x23
+   065F 12                 1679 	ld	(de),a
+                           1680 ; genPlus
+                           1681 ; genPlusIncr
+   0660 11 10 01           1682 	ld	de,#_map + 272
+                           1683 ; genAssign (pointer)
+   0663 3E 21              1684 	ld	a,#0x21
+   0665 12                 1685 	ld	(de),a
+                           1686 ; genPlus
+                           1687 ; genPlusIncr
+   0666 11 11 01           1688 	ld	de,#_map + 273
+                           1689 ; genAssign (pointer)
+   0669 3E 23              1690 	ld	a,#0x23
+   066B 12                 1691 	ld	(de),a
+                           1692 ; genPlus
+                           1693 ; genPlusIncr
+   066C 11 12 01           1694 	ld	de,#_map + 274
+                           1695 ; genAssign (pointer)
+   066F 3E 21              1696 	ld	a,#0x21
+   0671 12                 1697 	ld	(de),a
+                           1698 ; genPlus
+                           1699 ; genPlusIncr
+   0672 11 13 01           1700 	ld	de,#_map + 275
+                           1701 ; genAssign (pointer)
+   0675 3E 23              1702 	ld	a,#0x23
+   0677 12                 1703 	ld	(de),a
+                           1704 ; genPlus
+                           1705 ; genPlusIncr
+   0678 11 14 01           1706 	ld	de,#_map + 276
+                           1707 ; genAssign (pointer)
+   067B 3E 21              1708 	ld	a,#0x21
+   067D 12                 1709 	ld	(de),a
+                           1710 ; genPlus
+                           1711 ; genPlusIncr
+   067E 11 15 01           1712 	ld	de,#_map + 277
+                           1713 ; genAssign (pointer)
+   0681 3E 23              1714 	ld	a,#0x23
+   0683 12                 1715 	ld	(de),a
+                           1716 ; genPlus
+                           1717 ; genPlusIncr
+   0684 11 16 01           1718 	ld	de,#_map + 278
+                           1719 ; genAssign (pointer)
+   0687 3E 1D              1720 	ld	a,#0x1D
+   0689 12                 1721 	ld	(de),a
+                           1722 ; genPlus
+                           1723 ; genPlusIncr
+   068A 11 17 01           1724 	ld	de,#_map + 279
+                           1725 ; genAssign (pointer)
+   068D 3E 1F              1726 	ld	a,#0x1F
+   068F 12                 1727 	ld	(de),a
+                           1728 ; genPlus
+                           1729 ; genPlusIncr
+   0690 11 18 01           1730 	ld	de,#_map + 280
+                           1731 ; genAssign (pointer)
+   0693 3E 08              1732 	ld	a,#0x08
+   0695 12                 1733 	ld	(de),a
+                           1734 ; genPlus
+                           1735 ; genPlusIncr
+   0696 11 19 01           1736 	ld	de,#_map + 281
+                           1737 ; genAssign (pointer)
+   0699 3E 0A              1738 	ld	a,#0x0A
+   069B 12                 1739 	ld	(de),a
+                           1740 ; genPlus
+                           1741 ; genPlusIncr
+   069C 11 1A 01           1742 	ld	de,#_map + 282
+                           1743 ; genAssign (pointer)
+   069F 3E 14              1744 	ld	a,#0x14
+   06A1 12                 1745 	ld	(de),a
+                           1746 ; genPlus
+                           1747 ; genPlusIncr
+   06A2 11 1B 01           1748 	ld	de,#_map + 283
+                           1749 ; genAssign (pointer)
+   06A5 3E 16              1750 	ld	a,#0x16
+   06A7 12                 1751 	ld	(de),a
+                           1752 ; genPlus
+                           1753 ; genPlusIncr
+   06A8 11 1C 01           1754 	ld	de,#_map + 284
+                           1755 ; genAssign (pointer)
+   06AB 3E 14              1756 	ld	a,#0x14
+   06AD 12                 1757 	ld	(de),a
+                           1758 ; genPlus
+                           1759 ; genPlusIncr
+   06AE 11 1D 01           1760 	ld	de,#_map + 285
+                           1761 ; genAssign (pointer)
+   06B1 3E 16              1762 	ld	a,#0x16
+   06B3 12                 1763 	ld	(de),a
+                           1764 ; genPlus
+                           1765 ; genPlusIncr
+   06B4 11 1E 01           1766 	ld	de,#_map + 286
+                           1767 ; genAssign (pointer)
+   06B7 3E 14              1768 	ld	a,#0x14
+   06B9 12                 1769 	ld	(de),a
+                           1770 ; genPlus
+                           1771 ; genPlusIncr
+   06BA 11 1F 01           1772 	ld	de,#_map + 287
+                           1773 ; genAssign (pointer)
+   06BD 3E 16              1774 	ld	a,#0x16
+   06BF 12                 1775 	ld	(de),a
+                           1776 ; genPlus
+                           1777 ; genPlusIncr
+   06C0 11 20 01           1778 	ld	de,#_map + 288
+                           1779 ; genAssign (pointer)
+   06C3 3E 14              1780 	ld	a,#0x14
+   06C5 12                 1781 	ld	(de),a
+                           1782 ; genPlus
+                           1783 ; genPlusIncr
+   06C6 11 21 01           1784 	ld	de,#_map + 289
+                           1785 ; genAssign (pointer)
+   06C9 3E 16              1786 	ld	a,#0x16
+   06CB 12                 1787 	ld	(de),a
+                           1788 ; genPlus
+                           1789 ; genPlusIncr
+   06CC 11 22 01           1790 	ld	de,#_map + 290
+                           1791 ; genAssign (pointer)
+   06CF 3E 14              1792 	ld	a,#0x14
+   06D1 12                 1793 	ld	(de),a
+                           1794 ; genPlus
+                           1795 ; genPlusIncr
+   06D2 11 23 01           1796 	ld	de,#_map + 291
+                           1797 ; genAssign (pointer)
+   06D5 3E 16              1798 	ld	a,#0x16
+   06D7 12                 1799 	ld	(de),a
+                           1800 ; genPlus
+                           1801 ; genPlusIncr
+   06D8 11 24 01           1802 	ld	de,#_map + 292
+                           1803 ; genAssign (pointer)
+   06DB 3E 14              1804 	ld	a,#0x14
+   06DD 12                 1805 	ld	(de),a
+                           1806 ; genPlus
+                           1807 ; genPlusIncr
+   06DE 11 25 01           1808 	ld	de,#_map + 293
+                           1809 ; genAssign (pointer)
+   06E1 3E 16              1810 	ld	a,#0x16
+   06E3 12                 1811 	ld	(de),a
+                           1812 ; genPlus
+                           1813 ; genPlusIncr
+   06E4 11 26 01           1814 	ld	de,#_map + 294
+                           1815 ; genAssign (pointer)
+   06E7 3E 14              1816 	ld	a,#0x14
+   06E9 12                 1817 	ld	(de),a
+                           1818 ; genPlus
+                           1819 ; genPlusIncr
+   06EA 11 27 01           1820 	ld	de,#_map + 295
+                           1821 ; genAssign (pointer)
+   06ED 3E 16              1822 	ld	a,#0x16
+   06EF 12                 1823 	ld	(de),a
+                           1824 ; genPlus
+                           1825 ; genPlusIncr
+   06F0 11 28 01           1826 	ld	de,#_map + 296
+                           1827 ; genAssign (pointer)
+   06F3 3E 14              1828 	ld	a,#0x14
+   06F5 12                 1829 	ld	(de),a
+                           1830 ; genPlus
+                           1831 ; genPlusIncr
+   06F6 11 29 01           1832 	ld	de,#_map + 297
+                           1833 ; genAssign (pointer)
+   06F9 3E 16              1834 	ld	a,#0x16
+   06FB 12                 1835 	ld	(de),a
+                           1836 ; genPlus
+                           1837 ; genPlusIncr
+   06FC 11 2A 01           1838 	ld	de,#_map + 298
+                           1839 ; genAssign (pointer)
+   06FF 3E 0C              1840 	ld	a,#0x0C
+   0701 12                 1841 	ld	(de),a
+                           1842 ; genPlus
+                           1843 ; genPlusIncr
+   0702 11 2B 01           1844 	ld	de,#_map + 299
+                           1845 ; genAssign (pointer)
+   0705 3E 0E              1846 	ld	a,#0x0E
+   0707 12                 1847 	ld	(de),a
+                           1848 ; genPlus
+                           1849 ; genPlusIncr
+   0708 11 2C 01           1850 	ld	de,#_map + 300
+                           1851 ; genAssign (pointer)
+   070B 3E 09              1852 	ld	a,#0x09
+   070D 12                 1853 	ld	(de),a
+                           1854 ; genPlus
+                           1855 ; genPlusIncr
+   070E 11 2D 01           1856 	ld	de,#_map + 301
+                           1857 ; genAssign (pointer)
+   0711 3E 0B              1858 	ld	a,#0x0B
+   0713 12                 1859 	ld	(de),a
+                           1860 ; genPlus
+                           1861 ; genPlusIncr
+   0714 11 2E 01           1862 	ld	de,#_map + 302
+                           1863 ; genAssign (pointer)
+   0717 3E 15              1864 	ld	a,#0x15
+   0719 12                 1865 	ld	(de),a
+                           1866 ; genPlus
+                           1867 ; genPlusIncr
+   071A 11 2F 01           1868 	ld	de,#_map + 303
+                           1869 ; genAssign (pointer)
+   071D 3E 17              1870 	ld	a,#0x17
+   071F 12                 1871 	ld	(de),a
+                           1872 ; genPlus
+                           1873 ; genPlusIncr
+   0720 11 30 01           1874 	ld	de,#_map + 304
+                           1875 ; genAssign (pointer)
+   0723 3E 15              1876 	ld	a,#0x15
+   0725 12                 1877 	ld	(de),a
+                           1878 ; genPlus
+                           1879 ; genPlusIncr
+   0726 11 31 01           1880 	ld	de,#_map + 305
+                           1881 ; genAssign (pointer)
+   0729 3E 17              1882 	ld	a,#0x17
+   072B 12                 1883 	ld	(de),a
+                           1884 ; genPlus
+                           1885 ; genPlusIncr
+   072C 11 32 01           1886 	ld	de,#_map + 306
+                           1887 ; genAssign (pointer)
+   072F 3E 15              1888 	ld	a,#0x15
+   0731 12                 1889 	ld	(de),a
+                           1890 ; genPlus
+                           1891 ; genPlusIncr
+   0732 11 33 01           1892 	ld	de,#_map + 307
+                           1893 ; genAssign (pointer)
+   0735 3E 17              1894 	ld	a,#0x17
+   0737 12                 1895 	ld	(de),a
+                           1896 ; genPlus
+                           1897 ; genPlusIncr
+   0738 11 34 01           1898 	ld	de,#_map + 308
+                           1899 ; genAssign (pointer)
+   073B 3E 15              1900 	ld	a,#0x15
+   073D 12                 1901 	ld	(de),a
+                           1902 ; genPlus
+                           1903 ; genPlusIncr
+   073E 11 35 01           1904 	ld	de,#_map + 309
+                           1905 ; genAssign (pointer)
+   0741 3E 17              1906 	ld	a,#0x17
+   0743 12                 1907 	ld	(de),a
+                           1908 ; genPlus
+                           1909 ; genPlusIncr
+   0744 11 36 01           1910 	ld	de,#_map + 310
+                           1911 ; genAssign (pointer)
+   0747 3E 15              1912 	ld	a,#0x15
+   0749 12                 1913 	ld	(de),a
+                           1914 ; genPlus
+                           1915 ; genPlusIncr
+   074A 11 37 01           1916 	ld	de,#_map + 311
+                           1917 ; genAssign (pointer)
+   074D 3E 17              1918 	ld	a,#0x17
+   074F 12                 1919 	ld	(de),a
+                           1920 ; genPlus
+                           1921 ; genPlusIncr
+   0750 11 38 01           1922 	ld	de,#_map + 312
+                           1923 ; genAssign (pointer)
+   0753 3E 15              1924 	ld	a,#0x15
+   0755 12                 1925 	ld	(de),a
+                           1926 ; genPlus
+                           1927 ; genPlusIncr
+   0756 11 39 01           1928 	ld	de,#_map + 313
+                           1929 ; genAssign (pointer)
+   0759 3E 17              1930 	ld	a,#0x17
+   075B 12                 1931 	ld	(de),a
+                           1932 ; genPlus
+                           1933 ; genPlusIncr
+   075C 11 3A 01           1934 	ld	de,#_map + 314
+                           1935 ; genAssign (pointer)
+   075F 3E 15              1936 	ld	a,#0x15
+   0761 12                 1937 	ld	(de),a
+                           1938 ; genPlus
+                           1939 ; genPlusIncr
+   0762 11 3B 01           1940 	ld	de,#_map + 315
+                           1941 ; genAssign (pointer)
+   0765 3E 17              1942 	ld	a,#0x17
+   0767 12                 1943 	ld	(de),a
+                           1944 ; genPlus
+                           1945 ; genPlusIncr
+   0768 11 3C 01           1946 	ld	de,#_map + 316
+                           1947 ; genAssign (pointer)
+   076B 3E 15              1948 	ld	a,#0x15
+   076D 12                 1949 	ld	(de),a
+                           1950 ; genPlus
+                           1951 ; genPlusIncr
+   076E 11 3D 01           1952 	ld	de,#_map + 317
+                           1953 ; genAssign (pointer)
+   0771 3E 17              1954 	ld	a,#0x17
+   0773 12                 1955 	ld	(de),a
+                           1956 ; genPlus
+                           1957 ; genPlusIncr
+   0774 11 3E 01           1958 	ld	de,#_map + 318
+                           1959 ; genAssign (pointer)
+   0777 3E 0D              1960 	ld	a,#0x0D
+   0779 12                 1961 	ld	(de),a
+                           1962 ; genPlus
+                           1963 ; genPlusIncr
+   077A 11 3F 01           1964 	ld	de,#_map + 319
+                           1965 ; genAssign (pointer)
+   077D 3E 0F              1966 	ld	a,#0x0F
+   077F 12                 1967 	ld	(de),a
+                           1968 ; genPlus
+                           1969 ; genPlusIncr
+   0780 11 40 01           1970 	ld	de,#_map + 320
+                           1971 ; genAssign (pointer)
+   0783 3E 24              1972 	ld	a,#0x24
+   0785 12                 1973 	ld	(de),a
+                           1974 ; genPlus
+                           1975 ; genPlusIncr
+   0786 11 41 01           1976 	ld	de,#_map + 321
+                           1977 ; genAssign (pointer)
+   0789 3E 24              1978 	ld	a,#0x24
+   078B 12                 1979 	ld	(de),a
+                           1980 ; genPlus
+                           1981 ; genPlusIncr
+   078C 11 42 01           1982 	ld	de,#_map + 322
+                           1983 ; genAssign (pointer)
+   078F 3E 24              1984 	ld	a,#0x24
+   0791 12                 1985 	ld	(de),a
+                           1986 ; genPlus
+                           1987 ; genPlusIncr
+   0792 11 43 01           1988 	ld	de,#_map + 323
+                           1989 ; genAssign (pointer)
+   0795 3E 24              1990 	ld	a,#0x24
+   0797 12                 1991 	ld	(de),a
+                           1992 ; genPlus
+                           1993 ; genPlusIncr
+   0798 11 44 01           1994 	ld	de,#_map + 324
+                           1995 ; genAssign (pointer)
+   079B 3E 24              1996 	ld	a,#0x24
+   079D 12                 1997 	ld	(de),a
+                           1998 ; genPlus
+                           1999 ; genPlusIncr
+   079E 11 45 01           2000 	ld	de,#_map + 325
+                           2001 ; genAssign (pointer)
+   07A1 3E 24              2002 	ld	a,#0x24
+   07A3 12                 2003 	ld	(de),a
+                           2004 ; genPlus
+                           2005 ; genPlusIncr
+   07A4 11 46 01           2006 	ld	de,#_map + 326
+                           2007 ; genAssign (pointer)
+   07A7 3E 24              2008 	ld	a,#0x24
+   07A9 12                 2009 	ld	(de),a
+                           2010 ; genPlus
+                           2011 ; genPlusIncr
+   07AA 11 47 01           2012 	ld	de,#_map + 327
+                           2013 ; genAssign (pointer)
+   07AD 3E 24              2014 	ld	a,#0x24
+   07AF 12                 2015 	ld	(de),a
+                           2016 ; genPlus
+                           2017 ; genPlusIncr
+   07B0 11 48 01           2018 	ld	de,#_map + 328
+                           2019 ; genAssign (pointer)
+   07B3 3E 24              2020 	ld	a,#0x24
+   07B5 12                 2021 	ld	(de),a
+                           2022 ; genPlus
+                           2023 ; genPlusIncr
+   07B6 11 49 01           2024 	ld	de,#_map + 329
+                           2025 ; genAssign (pointer)
+   07B9 3E 24              2026 	ld	a,#0x24
+   07BB 12                 2027 	ld	(de),a
+                           2028 ; genPlus
+                           2029 ; genPlusIncr
+   07BC 11 4A 01           2030 	ld	de,#_map + 330
+                           2031 ; genAssign (pointer)
+   07BF 3E 24              2032 	ld	a,#0x24
+   07C1 12                 2033 	ld	(de),a
+                           2034 ; genPlus
+                           2035 ; genPlusIncr
+   07C2 11 4B 01           2036 	ld	de,#_map + 331
+                           2037 ; genAssign (pointer)
+   07C5 3E 24              2038 	ld	a,#0x24
+   07C7 12                 2039 	ld	(de),a
+                           2040 ; genPlus
+                           2041 ; genPlusIncr
+   07C8 11 4C 01           2042 	ld	de,#_map + 332
+                           2043 ; genAssign (pointer)
+   07CB 3E 24              2044 	ld	a,#0x24
+   07CD 12                 2045 	ld	(de),a
+                           2046 ; genPlus
+                           2047 ; genPlusIncr
+   07CE 11 4D 01           2048 	ld	de,#_map + 333
+                           2049 ; genAssign (pointer)
+   07D1 3E 24              2050 	ld	a,#0x24
+   07D3 12                 2051 	ld	(de),a
+                           2052 ; genPlus
+                           2053 ; genPlusIncr
+   07D4 11 4E 01           2054 	ld	de,#_map + 334
+                           2055 ; genAssign (pointer)
+   07D7 3E 24              2056 	ld	a,#0x24
+   07D9 12                 2057 	ld	(de),a
+                           2058 ; genPlus
+                           2059 ; genPlusIncr
+   07DA 11 4F 01           2060 	ld	de,#_map + 335
+                           2061 ; genAssign (pointer)
+   07DD 3E 24              2062 	ld	a,#0x24
+   07DF 12                 2063 	ld	(de),a
+                           2064 ; genPlus
+                           2065 ; genPlusIncr
+   07E0 11 50 01           2066 	ld	de,#_map + 336
+                           2067 ; genAssign (pointer)
+   07E3 3E 24              2068 	ld	a,#0x24
+   07E5 12                 2069 	ld	(de),a
+                           2070 ; genPlus
+                           2071 ; genPlusIncr
+   07E6 11 51 01           2072 	ld	de,#_map + 337
+                           2073 ; genAssign (pointer)
+   07E9 3E 24              2074 	ld	a,#0x24
+   07EB 12                 2075 	ld	(de),a
+                           2076 ; genPlus
+                           2077 ; genPlusIncr
+   07EC 11 52 01           2078 	ld	de,#_map + 338
+                           2079 ; genAssign (pointer)
+   07EF 3E 24              2080 	ld	a,#0x24
+   07F1 12                 2081 	ld	(de),a
+                           2082 ; genPlus
+                           2083 ; genPlusIncr
+   07F2 11 53 01           2084 	ld	de,#_map + 339
+                           2085 ; genAssign (pointer)
+   07F5 3E 24              2086 	ld	a,#0x24
+   07F7 12                 2087 	ld	(de),a
+                           2088 ; genPlus
+                           2089 ; genPlusIncr
+   07F8 11 54 01           2090 	ld	de,#_map + 340
+                           2091 ; genAssign (pointer)
+   07FB 3E 24              2092 	ld	a,#0x24
+   07FD 12                 2093 	ld	(de),a
+                           2094 ; genPlus
+                           2095 ; genPlusIncr
+   07FE 11 55 01           2096 	ld	de,#_map + 341
+                           2097 ; genAssign (pointer)
+   0801 3E 24              2098 	ld	a,#0x24
+   0803 12                 2099 	ld	(de),a
+                           2100 ; genPlus
+                           2101 ; genPlusIncr
+   0804 11 56 01           2102 	ld	de,#_map + 342
+                           2103 ; genAssign (pointer)
+   0807 3E 24              2104 	ld	a,#0x24
+   0809 12                 2105 	ld	(de),a
+                           2106 ; genPlus
+                           2107 ; genPlusIncr
+   080A 11 57 01           2108 	ld	de,#_map + 343
+                           2109 ; genAssign (pointer)
+   080D 3E 24              2110 	ld	a,#0x24
+   080F 12                 2111 	ld	(de),a
+                           2112 ; genPlus
+                           2113 ; genPlusIncr
+   0810 11 58 01           2114 	ld	de,#_map + 344
+                           2115 ; genAssign (pointer)
+   0813 3E 24              2116 	ld	a,#0x24
+   0815 12                 2117 	ld	(de),a
+                           2118 ; genPlus
+                           2119 ; genPlusIncr
+   0816 11 59 01           2120 	ld	de,#_map + 345
+                           2121 ; genAssign (pointer)
+   0819 3E 24              2122 	ld	a,#0x24
+   081B 12                 2123 	ld	(de),a
+                           2124 ; genPlus
+                           2125 ; genPlusIncr
+   081C 11 5A 01           2126 	ld	de,#_map + 346
+                           2127 ; genAssign (pointer)
+   081F 3E 24              2128 	ld	a,#0x24
+   0821 12                 2129 	ld	(de),a
+                           2130 ; genPlus
+                           2131 ; genPlusIncr
+   0822 11 5B 01           2132 	ld	de,#_map + 347
+                           2133 ; genAssign (pointer)
+   0825 3E 24              2134 	ld	a,#0x24
+   0827 12                 2135 	ld	(de),a
+                           2136 ; genPlus
+                           2137 ; genPlusIncr
+   0828 11 5C 01           2138 	ld	de,#_map + 348
+                           2139 ; genAssign (pointer)
+   082B 3E 24              2140 	ld	a,#0x24
+   082D 12                 2141 	ld	(de),a
+                           2142 ; genPlus
+                           2143 ; genPlusIncr
+   082E 11 5D 01           2144 	ld	de,#_map + 349
+                           2145 ; genAssign (pointer)
+   0831 3E 24              2146 	ld	a,#0x24
+   0833 12                 2147 	ld	(de),a
+                           2148 ; genPlus
+                           2149 ; genPlusIncr
+   0834 11 5E 01           2150 	ld	de,#_map + 350
+                           2151 ; genAssign (pointer)
+   0837 3E 24              2152 	ld	a,#0x24
+   0839 12                 2153 	ld	(de),a
+                           2154 ; genPlus
+                           2155 ; genPlusIncr
+   083A 11 5F 01           2156 	ld	de,#_map + 351
+                           2157 ; genAssign (pointer)
+   083D 3E 24              2158 	ld	a,#0x24
+   083F 12                 2159 	ld	(de),a
+                           2160 ; genPlus
+                           2161 ; genPlusIncr
+   0840 11 60 01           2162 	ld	de,#_map + 352
+                           2163 ; genAssign (pointer)
+   0843 3E 24              2164 	ld	a,#0x24
+   0845 12                 2165 	ld	(de),a
+                           2166 ; genPlus
+                           2167 ; genPlusIncr
+   0846 11 61 01           2168 	ld	de,#_map + 353
+                           2169 ; genAssign (pointer)
+   0849 3E 24              2170 	ld	a,#0x24
+   084B 12                 2171 	ld	(de),a
+                           2172 ; genPlus
+                           2173 ; genPlusIncr
+   084C 11 62 01           2174 	ld	de,#_map + 354
+                           2175 ; genAssign (pointer)
+   084F 3E 24              2176 	ld	a,#0x24
+   0851 12                 2177 	ld	(de),a
+                           2178 ; genPlus
+                           2179 ; genPlusIncr
+   0852 11 63 01           2180 	ld	de,#_map + 355
+                           2181 ; genAssign (pointer)
+   0855 3E 24              2182 	ld	a,#0x24
+   0857 12                 2183 	ld	(de),a
+                           2184 ; genPlus
+                           2185 ; genPlusIncr
+   0858 11 64 01           2186 	ld	de,#_map + 356
+                           2187 ; genAssign (pointer)
+   085B 3E 24              2188 	ld	a,#0x24
+   085D 12                 2189 	ld	(de),a
+                           2190 ; genPlus
+                           2191 ; genPlusIncr
+   085E 11 65 01           2192 	ld	de,#_map + 357
+                           2193 ; genAssign (pointer)
+   0861 3E 24              2194 	ld	a,#0x24
+   0863 12                 2195 	ld	(de),a
+                           2196 ; genPlus
+                           2197 ; genPlusIncr
+   0864 11 66 01           2198 	ld	de,#_map + 358
+                           2199 ; genAssign (pointer)
+   0867 3E 24              2200 	ld	a,#0x24
+   0869 12                 2201 	ld	(de),a
+                           2202 ; genPlus
+                           2203 ; genPlusIncr
+   086A 11 67 01           2204 	ld	de,#_map + 359
+                           2205 ; genAssign (pointer)
+   086D 3E 24              2206 	ld	a,#0x24
+   086F 12                 2207 	ld	(de),a
+                           2208 ;--------------------------------------------------------
+                           2209 ; code
+                           2210 ;--------------------------------------------------------
+                           2211 	.area _CODE
+                           2212 	.area _CODE
+ASxxxx Assembler V01.75  (GameBoy Z80-like CPU), page 1.
+
+Symbol Table
+
+  1 _map                               0000 GR
+
+ASxxxx Assembler V01.75  (GameBoy Z80-like CPU), page 2.
+
+Area Table
+
+   0 _CODE                              size    0   flags 0
+   1 _DATA                              size  168   flags 0
+   2 _OVERLAY                           size    0   flags 0
+   3 _ISEG                              size    0   flags 0
+   4 _BSEG                              size    0   flags 0
+   5 _XSEG                              size    0   flags 0
+   6 _GSINIT                            size  870   flags 0
+   7 _GSFINAL                           size    0   flags 0
